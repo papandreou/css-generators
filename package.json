@@ -1,0 +1,48 @@
+{
+  "name": "css-generators",
+  "version": "0.0.0",
+  "description": "CSS random generators",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint .",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
+    "ci": "npm run coverage && npm run lint && prettier --check '**/*.js'"
+  },
+  "keywords": [
+    "testing",
+    "generators",
+    "chance-generators",
+    "css"
+  ],
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "coveralls": "^3.0.7",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-mocha": "^6.2.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "magicpen-prism": "^3.0.2",
+    "mocha": "6.2.0",
+    "nyc": "^14.1.1",
+    "prettier": "1.18.2",
+    "unexpected": "11.8.0",
+    "unexpected-snapshot": "0.6.0",
+    "unexpected-check": "^2.2.0"
+  },
+  "dependencies": {
+    "chance-generators": "3.5.1",
+    "css-syntax-parser": "^1.5.1",
+    "mdn-data": "^2.0.4",
+    "pegjs": "^0.10.0"
+  },
+  "nyc": {
+    "include": [
+      "src/**"
+    ]
+  }
+}
