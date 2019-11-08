@@ -3,7 +3,7 @@ const expect = require('unexpected')
   .use(require('unexpected-snapshot'))
   .use(require('magicpen-prism'));
 
-const CssSyntaxGenerator = require('../lib/CssSyntaxGenerator');
+const CssSyntaxGenerator = require('../lib/CssNamedSyntaxGenerator');
 
 describe('CssSyntaxGenerator', () => {
   it('supports a simple combinator', () => {
@@ -51,18 +51,18 @@ describe('CssSyntaxGenerator', () => {
       new CssSyntaxGenerator('angular-color-stop').take(3),
       'to equal snapshot',
       [
-        'currentcolor 20%',
-        'InfoText -907.0992turn',
-        '-99.0015deg rgb(7965998619557888 , 56%)'
+        'rgb(8534420776550400 / -4813963569135616) -818.7872turn',
+        '28.4689turn #777dc5',
+        '#ae28a2 -99.0015deg'
       ]
     );
   });
 
   it('supports a "between n and m" multiplier', () => {
     expect(new CssSyntaxGenerator('shadow').take(3), 'to equal snapshot', [
-      'rgb(23% / 24%) inset -119.695rad',
-      'inset 666.3899deg rgba(-1962477596180480 , -5724325764136960)',
-      '-149.6883rad rgba(57% , -8443109138497536) inset'
+      'inset 931.2641px currentcolor',
+      '-804.6558ex inset darkseagreen',
+      '219.9933pt currentcolor inset'
     ]);
   });
 });
