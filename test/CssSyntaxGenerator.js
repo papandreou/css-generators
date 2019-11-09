@@ -92,4 +92,12 @@ describe('CssSyntaxGenerator', () => {
       ]
     );
   });
+
+  it('supports a reference to a declaration value syntax', () => {
+    expect(
+      new CssSyntaxGenerator("<'border-radius'>").take(3), // shadow
+      'to equal snapshot',
+      ['593.086vw / 463.9879vh', '60% / -108.3345em', '-883.8328pc / 33%']
+    );
+  });
 });
