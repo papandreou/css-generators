@@ -37,6 +37,7 @@
   "dependencies": {
     "chance-generators": "3.5.1",
     "css-syntax-parser": "^1.5.1",
+    "iso-639-1": "^2.1.0",
     "mdn-data": "^2.0.4",
     "pegjs": "^0.10.0"
   },

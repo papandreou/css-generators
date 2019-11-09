@@ -72,4 +72,12 @@ describe('CssNamedSyntaxGenerator', () => {
       '301.777ch inset rgb(3999174336970752 , 94%)'
     ]);
   });
+
+  it('supports <language-code>', () => {
+    expect(
+      new CssNamedSyntaxGenerator('language-code').take(3),
+      'to equal snapshot',
+      ['ii', 'sn', 'vi']
+    );
+  });
 });
