@@ -80,4 +80,12 @@ describe('CssNamedSyntaxGenerator', () => {
       ['ii', 'sn', 'vi']
     );
   });
+
+  it('supports <string>', () => {
+    expect(new CssNamedSyntaxGenerator('string').take(3), 'to equal snapshot', [
+      "'ofosid'",
+      "'daej'",
+      "'wocu'"
+    ]);
+  });
 });
