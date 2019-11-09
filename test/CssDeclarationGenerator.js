@@ -19,8 +19,8 @@ describe('CssDeclarationGenerator', () => {
       '-moz-border-bottom-colors: hsla(1821526110240768 , 14% , 71% , 2%)',
       '-ms-scrollbar-track-color: ThreeDDarkShadow',
       'scroll-margin-block: 877.1055ex',
-      '--goh: -985.8674pc',
-      "-ms-filter: 'ted'"
+      '--*: touch',
+      '-webkit-overflow-scrolling: touch'
     ]);
   });
 });
