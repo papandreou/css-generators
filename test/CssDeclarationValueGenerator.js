@@ -12,7 +12,9 @@ describe('CssDeclarationValueGenerator', () => {
   describe('with a property name', () => {
     it('should generate a valid values for that property', () => {
       expect(
-        new CssDeclarationValueGenerator('background-position-y').take(10),
+        new CssDeclarationValueGenerator({
+          propertyName: 'background-position-y'
+        }).take(10),
         'to equal snapshot',
         [
           'center',
