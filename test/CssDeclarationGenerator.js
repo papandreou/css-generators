@@ -11,16 +11,16 @@ describe('CssDeclarationGenerator', () => {
 
   it('should generate a CSS property + value pair', () => {
     expect(new CssDeclarationGenerator().take(10), 'to equal snapshot', [
-      'border-top-color: currentcolor',
-      'touch-action: auto',
-      'outline-color: invert',
-      'inset-inline-start: 15%',
-      'column-span: none',
-      '-moz-border-bottom-colors: hsla(1821526110240768 , 14% , 71% , 2%)',
-      '-ms-scrollbar-track-color: ThreeDDarkShadow',
-      'scroll-margin-block: 877.1055ex',
-      '--*: touch',
-      '-webkit-overflow-scrolling: touch'
+      'flex-grow: 5342043492581376',
+      'transition-delay: -633.1305s',
+      'scroll-behavior: smooth',
+      'margin-top: -108.3345em',
+      'border-block-end-style: none',
+      'grid-auto-rows: fit-content(202.23em)',
+      'padding-inline: 2%',
+      'background-clip: content-box',
+      'padding-top: 94%',
+      'border-left-width: -636.3501vw'
     ]);
   });
 });
