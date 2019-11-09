@@ -45,11 +45,15 @@ describe('CssNamedSyntaxGenerator', () => {
     );
   });
 
-  it.skip('supports <declaration>', () => {
+  it('supports <declaration>', () => {
     expect(
       new CssNamedSyntaxGenerator('supports-condition').take(3),
       'to equal snapshot',
-      []
+      [
+        '(zin element(#tac) content content) and (gu #4de2d1)',
+        '(column-count: 29%) and selector(uj | do [ sibsof | buunu ] : : de : va normal ) || hazekgin | uv : iwwuhsa : : kuj hidden ) : luhredad none ))',
+        'selector(bu | wot : lod edges spaces objects box-decoration ) : : kos : inla isolate-override ) || * | * [ * | bi ] : : biga 48% ) : vudsi) or selector(sefuwaho | nuf #imeduj : : jemateh : ril > hu | * #pi : : cuug bottom 30% ) : ben)'
+      ]
     );
   });
 
