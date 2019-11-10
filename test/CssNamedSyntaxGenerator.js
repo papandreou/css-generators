@@ -57,6 +57,14 @@ describe('CssNamedSyntaxGenerator', () => {
     );
   });
 
+  it('supports string-token', () => {
+    expect(
+      new CssNamedSyntaxGenerator('string-token').take(3),
+      'to equal snapshot',
+      [ '\'ofosid\'', '\'daej\'', '\'wocu\'' ]
+    );
+  });
+
   it('supports a 0 or more multiplier', () => {
     expect(
       new CssNamedSyntaxGenerator('angular-color-stop').take(3),
