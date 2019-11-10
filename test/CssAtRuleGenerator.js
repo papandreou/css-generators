@@ -29,7 +29,18 @@ describe('CssAtRuleGenerator', () => {
     expect(
       new CssAtRuleGenerator({ name: 'counter-style' }).take(10),
       'to equal snapshot',
-      []
+      [
+        "@counter-style ofosid{symbols: Ⓐ Ⓑ Ⓒ ; system: cyclic ; speak-as: auto ; negative: 'ofaufjom' 'be' ; suffix: element(#celel) ;}",
+        "@counter-style taj{fallback: ozi ; suffix: bave ; negative: 'tibawha' ; system: symbolic ; speak-as: spell-out ; pad: -149.6883pt ;}",
+        "@counter-style sab{speak-as: bullets ; range: infinite ; negative: 'uhlog' ; fallback: sezsi ; additive-symbols: -41% bu ; prefix: cross-fade(29% url(gor) , currentcolor) ; pad: 61% ; symbols: Ⓐ Ⓑ Ⓒ ; suffix: 'taevoka' ; system: cyclic ;}",
+        "@counter-style vewip{speak-as: words ; suffix: 'pawicna' ; negative: 'tih' ;}",
+        '@counter-style vudsi{pad: 63% ; symbols: Ⓐ Ⓑ Ⓒ ; speak-as: spell-out ; range: infinite ; system: cyclic ; additive-symbols: mu 77% ;}',
+        '@counter-style adlew{additive-symbols: 7% image-set(cross-fade(34% image(rtl url(pi) , indianred) , url(ugwijah)) 997.7405dpcm) ; fallback: umi ;}',
+        "@counter-style je{range: auto ; additive-symbols: holip 97% ; suffix: image-set('avkiwa' 858.3588dppx) ; symbols: Ⓐ Ⓑ Ⓒ ; negative: 'boagedaw' ; speak-as: spell-out ; fallback: pufoj ; prefix: om ; pad: 70% ; system: numeric ;}",
+        '@counter-style guz{suffix: kewo ; prefix: ikotucfow ; additive-symbols: url(opbed) -39% ; symbols: Ⓐ Ⓑ Ⓒ ; fallback: viuga ; system: additive ;}',
+        "@counter-style pe{pad: 17.6282mm ; negative: 'hi' 'miwtitpo' ;}",
+        "@counter-style pufwi{suffix: 'lobohiunu' ; system: fixed ; range: auto ;}"
+      ]
     );
   });
 
