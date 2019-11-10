@@ -65,6 +65,25 @@ describe('CssNamedSyntaxGenerator', () => {
     );
   });
 
+  it('supports dimension', () => {
+    expect(
+      new CssNamedSyntaxGenerator('dimension').take(10),
+      'to equal snapshot',
+      [
+        '-250.9198turn',
+        '901.4287dppx',
+        '463.9879s',
+        '197.317pt',
+        '-687.9628kHz',
+        '-688.011deg',
+        '-883.8328kHz',
+        '732.3523grad',
+        '202.23dpi',
+        '416.1452Q'
+      ]
+    );
+  });
+
   it('supports a 0 or more multiplier', () => {
     expect(
       new CssNamedSyntaxGenerator('angular-color-stop').take(3),
