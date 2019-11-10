@@ -61,7 +61,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('string-token').take(3),
       'to equal snapshot',
-      [ '\'ofosid\'', '\'daej\'', '\'wocu\'' ]
+      ["'ofosid'", "'daej'", "'wocu'"]
     );
   });
 
