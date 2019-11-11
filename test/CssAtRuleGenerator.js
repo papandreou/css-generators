@@ -17,11 +17,22 @@ describe('CssAtRuleGenerator', () => {
     );
   });
 
-  it.skip('should generate @charset', () => {
+  it('should generate @charset', () => {
     expect(
       new CssAtRuleGenerator({ name: 'charset' }).take(10),
       'to equal snapshot',
-      []
+      [
+        '@charset "DS_2089" ;',
+        '@charset "EBCDIC-DK-NO-A" ;',
+        '@charset "CP51932" ;',
+        '@charset "BS_viewdata" ;',
+        '@charset "IBM865" ;',
+        '@charset "EBCDIC-AT-DE" ;',
+        '@charset "HP-Math8" ;',
+        '@charset "HP-Math8" ;',
+        '@charset "PT" ;',
+        '@charset "KZ-1048" ;'
+      ]
     );
   });
 

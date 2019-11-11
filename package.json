@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "chance-generators": "3.5.1",
+    "character-sets": "^1.0.8",
     "css-syntax-parser": "^1.5.1",
     "html-validate": "^1.15.0",
     "iso-639-1": "^2.1.0",
