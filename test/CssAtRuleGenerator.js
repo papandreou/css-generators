@@ -9,11 +9,22 @@ const CssAtRuleGenerator = require('../lib/CssAtRuleGenerator');
 describe('CssAtRuleGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
-  it.skip('should generate @font-face', () => {
+  it('should generate @font-face', () => {
     expect(
       new CssAtRuleGenerator({ name: 'font-face' }).take(10),
       'to equal snapshot',
-      []
+      [
+        "@font-face{font-weight: normal ; font-style: normal ; src: url(kodtac) format('ewegute') ; font-feature-settings: 'maro' on ;}",
+        "@font-face{font-family: 'unien' ; unicode-range: U+ae28-d307 ;}",
+        "@font-face{font-style: oblique -517.9491grad ; font-weight: -6808753915559936 ; font-variant: none ; font-feature-settings: normal ; src: local('lef') ; font-variation-settings: 'miribu' 6166054300549120 ; font-family: muwwuh ; unicode-range: U+16?? ; font-stretch: normal ;}",
+        "@font-face{unicode-range: U+f71a-fc81 ; font-stretch: ultra-condensed ; font-style: normal ; font-feature-settings: 'bu' on ; src: local('ba') ; font-weight: -5425172966277120 ; font-variant: diagonal-fractions ordinal tabular-nums annotation(tevnedwus) no-discretionary-ligatures jis04 historical-forms swash(hib) proportional-width slashed-zero oldstyle-nums character-variant(biga) stylistic(nenvudsi) no-contextual unicase ; font-variation-settings: normal ; font-family: 'sefuwaho' ;}",
+        '@font-face{font-weight: bold ;}',
+        "@font-face{src: local('deg') ; font-style: italic ; unicode-range: U+6d56-e54f ; font-variation-settings: normal ; font-feature-settings: normal ; font-stretch: ultra-condensed ; font-family: pedej ; font-weight: normal ;}",
+        "@font-face{src: local('howeju') ; unicode-range: U+0971-9fbc ; font-style: italic ; font-variant: normal ; font-weight: normal ; font-feature-settings: normal ; font-stretch: condensed ; font-family: vapiz ; font-variation-settings: 'vas' -2348096507871232 ;}",
+        "@font-face{unicode-range: U+892? ; font-variation-settings: 'pa' 3527449992232960 ; font-weight: normal ;}",
+        "@font-face{font-variation-settings: normal ; unicode-range: U+a52a-b501 ; font-feature-settings: normal ; src: url(edowa) format('rur') ; font-family: 'guz' ; font-weight: bold ; font-style: italic ; font-variant: none ;}",
+        '@font-face{unicode-range: U+304f-6a3b ; font-weight: 6244891906539520 ; font-family: movecuaw ;}'
+      ]
     );
   });
 
