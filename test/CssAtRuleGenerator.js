@@ -85,11 +85,22 @@ describe('CssAtRuleGenerator', () => {
     );
   });
 
-  it.skip('should generate @font-feature-values', () => {
+  it('should generate @font-feature-values', () => {
     expect(
       new CssAtRuleGenerator({ name: 'font-feature-values' }).take(10),
       'to equal snapshot',
-      []
+      [
+        "@font-feature-values 'gotsalda'{@character-variant { satacwuw : -58% ; }}",
+        "@font-feature-values 'goh'{@swash { maro : -20% ; }}",
+        "@font-feature-values 'uj'{@historical-forms { apli : 97% ; }}",
+        '@font-feature-values enfic{@stylistic { unukaho : -52% ; }}',
+        "@font-feature-values 'tibawha'{@swash { miribu : 69% ; }}",
+        '@font-feature-values muwwuh{@stylistic { pakuj : 50% ; }}',
+        "@font-feature-values 'sezsi'{@historical-forms { ad : -86% ; }}",
+        "@font-feature-values 'zejaaf'{@swash { asoojduv : 70% ; }}",
+        '@font-feature-values dako{@styleset { sogrij : -76% ; }}',
+        '@font-feature-values zonzebi{@swash { biga : 80% ; }}'
+      ]
     );
   });
 
