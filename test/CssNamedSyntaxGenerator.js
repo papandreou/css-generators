@@ -65,6 +65,18 @@ describe('CssNamedSyntaxGenerator', () => {
     );
   });
 
+  it('supports name-repeat', () => {
+    expect(
+      new CssNamedSyntaxGenerator('name-repeat').take(3),
+      'to equal snapshot',
+      [
+        'repeat(80% , [ wosalda ])',
+        'repeat(87% , [ fopcu ])',
+        'repeat(auto-fill , [ gafgohrak ])'
+      ]
+    );
+  });
+
   it('supports dimension', () => {
     expect(
       new CssNamedSyntaxGenerator('dimension').take(10),
