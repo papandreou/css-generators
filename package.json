@@ -29,7 +29,7 @@
     "magicpen-prism": "^3.0.2",
     "mocha": "6.2.2",
     "nyc": "^14.1.1",
-    "prettier": "1.18.2",
+    "prettier": "1.19.1",
     "unexpected": "11.8.1",
     "unexpected-snapshot": "0.6.0",
     "unexpected-check": "^2.2.0"
