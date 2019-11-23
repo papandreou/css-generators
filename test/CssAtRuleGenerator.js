@@ -11,7 +11,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @font-face', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'font-face' }).take(10),
+      new CssAtRuleGenerator({ type: 'font-face' }).take(10),
       'to equal snapshot',
       [
         "font-weight:normal ; font-style:normal ; } src:url(kodtac) format('ewegute') ; font-feature-settings:'maro' on ;",
@@ -30,7 +30,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @charset', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'charset' }).take(10),
+      new CssAtRuleGenerator({ type: 'charset' }).take(10),
       'to equal snapshot',
       [
         '@charset "DS_2089" ;',
@@ -49,7 +49,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @counter-style', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'counter-style' }).take(10),
+      new CssAtRuleGenerator({ type: 'counter-style' }).take(10),
       'to equal snapshot',
       [
         'pad:-883.8328pc ; speak-as:fopcu ; symbols:Ⓐ Ⓑ Ⓒ ; suffix:gafgohrak ;',
@@ -68,7 +68,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @document', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'document' }).take(10),
+      new CssAtRuleGenerator({ type: 'document' }).take(10),
       'to equal snapshot',
       [
         "@document url-prefix('gotsalda') { ::before { mask-clip: stroke-box; object-fit: fill; }\n* { padding-top: 94%; border-left-width: -636.3501vw; border-inline-end-style: groove; column-count: auto; inset-inline-end: -136.11ch; }\n:first { mask-mode: luminance; border-color: rgb(8534420776550400 / -4813963569135616); grid-auto-flow: dense; }\n:only-child { float: none; }\n::slotted(sof | * . ow ::lebho hsla(1981523607683072 , 50% , 84% , -5884139412652032) ):gokim 93.4206s )) { animation-iteration-count: 6166054300549120; }\n:scope { transform-box: fill-box; text-emphasis: GrayText none; margin-block: 41.6685ch; }\n::placeholder { scroll-padding-top: auto; place-self: normal stretch; }\n:visited { empty-cells: hide; break-inside: avoid-column; left: -718.1516in; }\n:valid { background-size: auto; }\n:in-range { font-kerning: auto; clip: rect(-971.8404vmax , -602.3152rem , 422.6839rem , 580.3511vh); mask-composite: add; text-underline-position: auto; }\n }",
@@ -87,7 +87,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @font-feature-values', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'font-feature-values' }).take(10),
+      new CssAtRuleGenerator({ type: 'font-feature-values' }).take(10),
       'to equal snapshot',
       [
         "@font-feature-values 'gotsalda' { @character-variant { satacwuw:-58% ; } }",
@@ -106,7 +106,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @import', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'import' }).take(10),
+      new CssAtRuleGenerator({ type: 'import' }).take(10),
       'to equal snapshot',
       [
         "@import 'gotsalda' (tac) ;",
@@ -125,7 +125,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @keyframes', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'keyframes' }).take(10),
+      new CssAtRuleGenerator({ type: 'keyframes' }).take(10),
       'to equal snapshot',
       [
         '@keyframes gotsalda { to { content: none; border-end-end-radius: 65%; animation-delay: -887.1769s; padding-top: 94%; border-left-width: -636.3501vw; } }',
@@ -144,7 +144,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @media', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'media' }).take(10),
+      new CssAtRuleGenerator({ type: 'media' }).take(10),
       'to equal snapshot',
       [
         '@media sidfanu medium ) { :read-write { animation-delay: -887.1769s; padding-top: 94%; border-left-width: -636.3501vw; border-inline-end-style: groove; }\n:first { inset-inline-end: -136.11ch; clear: both; mask-mode: luminance; border-color: rgb(8534420776550400 / -4813963569135616); }\n:lang(bi) { mask-position: bottom; margin-right: 4%; shape-margin: 68%; border-inline-end: thick InfoBackground; }\n }',
@@ -163,7 +163,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @namespace', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'namespace' }).take(10),
+      new CssAtRuleGenerator({ type: 'namespace' }).take(10),
       'to equal snapshot',
       [
         "@namespace ofosid 'ci' ;",
@@ -182,7 +182,7 @@ describe('CssAtRuleGenerator', () => {
 
   it.skip('should generate @page', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'page' }).take(10),
+      new CssAtRuleGenerator({ type: 'page' }).take(10),
       'to equal snapshot',
       []
     );
@@ -190,7 +190,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @supports', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'supports' }).take(10),
+      new CssAtRuleGenerator({ type: 'supports' }).take(10),
       'to equal snapshot',
       [
         "@supports (zin element(#tac) content content) and (gu #4de2d1) { :link { font-variant-ligatures: normal; }\n:first { mask-mode: luminance; border-color: rgb(8534420776550400 / -4813963569135616); grid-auto-flow: dense; }\n:only-child { float: none; }\n::slotted(sof | * . ow ::lebho hsla(1981523607683072 , 50% , 84% , -5884139412652032) ):gokim 93.4206s )) { animation-iteration-count: 6166054300549120; }\n:scope { transform-box: fill-box; text-emphasis: GrayText none; margin-block: 41.6685ch; }\n::placeholder { scroll-padding-top: auto; place-self: normal stretch; }\n:visited { empty-cells: hide; break-inside: avoid-column; left: -718.1516in; }\n:valid { background-size: auto; }\n:in-range { font-kerning: auto; clip: rect(-971.8404vmax , -602.3152rem , 422.6839rem , 580.3511vh); mask-composite: add; text-underline-position: auto; }\n:optional { text-overflow: 'neclekos'; }\n:nth-last-of-type(even) { text-decoration-line: overline underline; scroll-snap-align: center; }\n:required { border-start-start-radius: 25%; height: border-box -949.1618pc; border-block-start: thick; }\n:only-of-type { column-rule: hidden rgba(41% , 76%); border-left: rgb(29% , 16%); text-decoration: dashed rgb(-783003563327488 , 22%) none; }\n }",
@@ -209,7 +209,7 @@ describe('CssAtRuleGenerator', () => {
 
   it('should generate @viewport', () => {
     expect(
-      new CssAtRuleGenerator({ name: 'viewport' }).take(10),
+      new CssAtRuleGenerator({ type: 'viewport' }).take(10),
       'to equal snapshot',
       [
         '@viewport { :target { border-inline-end-style: ridge; scroll-behavior: smooth; margin-top: -108.3345em; border-block-end-style: none; grid-auto-rows: fit-content(202.23em); }\n:read-write { animation-delay: -887.1769s; padding-top: 94%; border-left-width: -636.3501vw; border-inline-end-style: groove; }\n:first { inset-inline-end: -136.11ch; clear: both; mask-mode: luminance; border-color: rgb(8534420776550400 / -4813963569135616); }\n:lang(bi) { mask-position: bottom; margin-right: 4%; shape-margin: 68%; border-inline-end: thick InfoBackground; }\n:valid { column-count: -81%; border-spacing: 368.4661ex -119.695rem; }\n:nth-of-type(even) > ::after { border-inline-color: Highlight; }\n:empty { orphans: 51%; }\n:first-child { inset-inline: 93.4206px; border-inline-end-style: none; vertical-align: 78%; }\n }',
