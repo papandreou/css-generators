@@ -123,11 +123,22 @@ describe('CssAtRuleGenerator', () => {
     );
   });
 
-  it.skip('should generate @keyframes', () => {
+  it('should generate @keyframes', () => {
     expect(
       new CssAtRuleGenerator({ name: 'keyframes' }).take(10),
       'to equal snapshot',
-      []
+      [
+        '@keyframes gotsalda { to { content: none; border-end-end-radius: 65%; animation-delay: -887.1769s; padding-top: 94%; border-left-width: -636.3501vw; } }',
+        '@keyframes tima { from { mask-mode: luminance; border-color: rgb(8534420776550400 / -4813963569135616); grid-auto-flow: dense; } }',
+        "@keyframes 'pu' { to { background: local content-box element(#kahono) top / cover content-box repeat-x , padding-box left bottom / cover; border-inline-end-style: none; vertical-align: 78%; } }",
+        '@keyframes iwwuhsa { to { translate: none; } }',
+        "@keyframes 'jitluh' { to { break-after: avoid; clip-path: none; border-inline: thick; } }",
+        "@keyframes gebuwo { 79% { mask-composite: add; text-underline-position: auto; object-fit: fill; text-overflow: 'neclekos'; } }",
+        "@keyframes 'inla' { 72% { right: auto; list-style-position: inside; scale: none; height: border-box -949.1618pc; border-block-start: thick; } }",
+        "@keyframes 'riide' { to { justify-self: first baseline; border-spacing: 885.7072cm 197.7309in; padding-block: 760.9357vmin; } }",
+        "@keyframes 'tanufmu' { 54% { scroll-margin-left: -755.8241vmin; empty-cells: show; } }",
+        "@keyframes 'ho' { to { scroll-padding-block: auto; } }"
+      ]
     );
   });
 
