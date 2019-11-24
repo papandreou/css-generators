@@ -15,7 +15,7 @@ describe('CssStyleRuleGenerator', () => {
       ':last-child { content: none; border-end-end-radius: 65%; animation-delay: -887.1769s; padding-top: 94%; border-left-width: -636.3501vw; }',
       ':active { column-count: auto; inset-inline-end: -136.11ch; clear: both; mask-mode: luminance; }',
       '#lel :target + :only-child { float: none; }',
-      '::slotted(sof | * . ow ::lebho hsla(1981523607683072 , 50% , 84% , -5884139412652032) ):gokim 93.4206s )) { animation-iteration-count: 6166054300549120; }',
+      '::slotted(sof | * . ow ::lebho ( hsla(1981523607683072 , 50% , 84% , -5884139412652032) ):gokim ( 93.4206s )) { animation-iteration-count: 6166054300549120; }',
       ':scope { transform-box: fill-box; text-emphasis: GrayText none; margin-block: 41.6685ch; }',
       '::placeholder { scroll-padding-top: auto; place-self: normal stretch; }',
       ':visited { empty-cells: hide; break-inside: avoid-column; left: -718.1516in; }',

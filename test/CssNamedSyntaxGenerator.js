@@ -52,7 +52,7 @@ describe('CssNamedSyntaxGenerator', () => {
       [
         '(zin element(#tac) content content) and (gu #4de2d1)',
         '(font-variant-ligatures: normal) and ((border-color: rgb(8534420776550400 / -4813963569135616)) and (scroll-margin-block: 236.772em))',
-        'selector(sof | * . ow ::lebho hsla(1981523607683072 , 50% , 84% , -5884139412652032) ):gokim 93.4206s ) > * | nukonokan #uhlog ::luhredad none ):mahbu space-evenly )) and (cujduvtih button-bevel)'
+        'selector(sof | * . ow ::lebho ( hsla(1981523607683072 , 50% , 84% , -5884139412652032) ):gokim ( 93.4206s ) > * | nukonokan #uhlog ::luhredad ( none ):mahbu ( space-evenly )) and (cujduvtih button-bevel)'
       ]
     );
   });
