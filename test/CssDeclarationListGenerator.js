@@ -15,12 +15,12 @@ describe('CssDeclarationListGenerator', () => {
       'margin-top: -108.3345em; border-block-end-style: none; grid-auto-rows: fit-content(202.23em);',
       'object-fit: fill; background-clip: content-box; padding-top: 94%; border-left-width: -636.3501vw;',
       'mask-position: center left;',
-      'inset-inline-end: 40%; border-color: rgb(8534420776550400 / -4813963569135616);',
-      'border-block-width: thick; mask-position: bottom; margin-right: 4%;',
-      'mask-image: url(ca); transition: -390.7725ms -804.6558ms step-start none; overflow-wrap: normal; mask-mode: luminance; scroll-padding-inline-start: auto;',
+      'inset-inline-end: 40%; border-color: rgb(8534420776550400 );',
+      'grid-auto-flow: dense; mask-position: bottom;',
+      'grid-column-start: auto; shape-margin: 68%; border-inline-end: thick InfoBackground;',
+      'font: icon; animation: step-start; font-weight: lighter; border-bottom-color: #7ec3e9; scroll-padding-inline-start: auto;',
       'text-justify: inter-character;',
-      'border-inline-end-color: palevioletred; column-gap: normal;',
-      'border-left-style: double; margin-block: -937.3735vw; scroll-padding-right: 878.9979mm;'
+      'border-inline-end-color: palevioletred; column-gap: normal;'
     ]);
   });
 });

@@ -18,14 +18,14 @@ describe('CssDeclarationValueGenerator', () => {
         'to equal snapshot',
         [
           'center',
-          'y-end 463.9879vh',
-          'y-start -108.3345em',
+          'top 60%',
+          ' ',
           'center',
           'center',
           'center',
-          'bottom 14%',
-          'y-start -887.1769vw',
-          'y-end 21%',
+          'center',
+          ' 416.1452Q',
+          'center',
           'center'
         ]
       );

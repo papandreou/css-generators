@@ -41,7 +41,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('type-selector').take(3),
       'to equal snapshot',
-      ['* | wosalda', '* | fopcu', '* | *']
+      ['sidfanu | fopcu', 'uf | *', ' *']
     );
   });
 
@@ -51,8 +51,8 @@ describe('CssNamedSyntaxGenerator', () => {
       'to equal snapshot',
       [
         '(zin element(#tac) content content) and (gu #4de2d1)',
-        '(font-variant-ligatures: normal) and ((border-color: rgb(8534420776550400 / -4813963569135616)) and (scroll-margin-block: 236.772em))',
-        'selector(sof | * . ow ::lebho ( hsla(1981523607683072 , 50% , 84% , -5884139412652032) ):gokim ( 93.4206s ) > * | nukonokan #uhlog ::luhredad ( none ):mahbu ( space-evenly )) and (cujduvtih button-bevel)'
+        '(font-variant-ligatures: normal) and ((border-color: rgb(8534420776550400 )) and (((float: none) or (enfic 95%)) and (lebho hsla(1981523607683072 , 50% , 84% , ))))',
+        'not vo ( repeat )'
       ]
     );
   });
@@ -100,19 +100,15 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('angular-color-stop').take(3),
       'to equal snapshot',
-      [
-        'ButtonHighlight 78%',
-        '-108.3345deg rgb(46% / 33%)',
-        '65% rgb(97% / 84%)'
-      ]
+      ['ButtonHighlight 60%', ' rgba(5% )', '416.1452rad rgb(97% / 94%)']
     );
   });
 
   it('supports a "between n and m" multiplier', () => {
     expect(new CssNamedSyntaxGenerator('shadow').take(3), 'to equal snapshot', [
-      '-633.1305rem currentcolor inset',
-      '-108.3345em rgb(46% / 33%) inset',
-      '301.777ch inset rgb(3999174336970752 , 94%)'
+      '-633.1305rem #98cb2c ',
+      '-883.8328pc inset ',
+      '301.777ch  saddlebrown'
     ]);
   });
 

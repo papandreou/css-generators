@@ -55,7 +55,7 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator(`<wq-name> | <ns-prefix>? '*'`).take(3), // type-selector
       'to equal snapshot',
-      ['* | wosalda', '* | fopcu', '* | *']
+      ['sidfanu | fopcu', 'uf | *', ' *']
     );
   });
 
@@ -73,11 +73,7 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator('<color> && <color-stop-angle>?').take(3), // angular-color-stop
       'to equal snapshot',
-      [
-        'ButtonHighlight 78%',
-        '-108.3345deg rgb(46% / 33%)',
-        '65% rgb(97% / 84%)'
-      ]
+      ['ButtonHighlight 60%', ' rgba(5% )', '416.1452rad rgb(97% / 94%)']
     );
   });
 
@@ -85,11 +81,7 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator('inset? && <length>{2,4} && <color>?').take(3), // shadow
       'to equal snapshot',
-      [
-        '-633.1305rem currentcolor inset',
-        '-108.3345em rgb(46% / 33%) inset',
-        '301.777ch inset rgb(3999174336970752 , 94%)'
-      ]
+      ['-633.1305rem #98cb2c ', '-883.8328pc inset ', '301.777ch  saddlebrown']
     );
   });
 
@@ -97,7 +89,7 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator("<'border-radius'>").take(3), // shadow
       'to equal snapshot',
-      ['593.086vw / 463.9879vh', '60% / -108.3345em', '-883.8328pc / 33%']
+      ['593.086vw ', '78% / 15%', '-688.011cm ']
     );
   });
 });
