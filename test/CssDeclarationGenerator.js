@@ -11,16 +11,16 @@ describe('CssDeclarationGenerator', () => {
 
   it('should generate a CSS property + value pair', () => {
     expect(new CssDeclarationGenerator().take(10), 'to equal snapshot', [
-      'flex-grow: 5342043492581376',
+      'flex-shrink: 5342043492581376',
       'transition-delay: -633.1305s',
-      'scroll-behavior: smooth',
-      'margin-top: -108.3345em',
-      'border-block-end-style: none',
-      'grid-auto-rows: fit-content(202.23em)',
-      'padding-inline: 2%',
+      'scroll-margin-block: 197.317px',
+      'border-image-slice: -7960857937969152 ',
+      'text-align: left',
+      'mask-composite: add',
+      'padding-inline-start: 2%',
       'background-clip: content-box',
-      'padding-top: 94%',
-      'border-left-width: -636.3501vw'
+      'page-break-after: recto',
+      'transform-box: border-box'
     ]);
   });
 });
