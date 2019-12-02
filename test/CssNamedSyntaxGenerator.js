@@ -50,9 +50,9 @@ describe('CssNamedSyntaxGenerator', () => {
       new CssNamedSyntaxGenerator('supports-condition').take(3),
       'to equal snapshot',
       [
-        '(zin element(#tac) content content) and (gu #4de2d1)',
-        '(font-variant-ligatures: normal) and ((border-color: rgb(8534420776550400 )) and (((float: none) or (enfic 95%)) and (lebho hsla(1981523607683072 , 50% , 84% , ))))',
-        'not vo ( repeat )'
+        '(zin none, padding bottom / contain border, url(jom)) and ((not selector( #uj ::apli:cuval ( -973.4701vw ) ||  * . ho ::dolbaw:vo)) and ((line-break: normal) and (not (okonokan read-write))))',
+        'not zeenejom ( hidden )',
+        'not uk ( -602.5687in )'
       ]
     );
   });

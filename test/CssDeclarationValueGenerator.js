@@ -17,15 +17,15 @@ describe('CssDeclarationValueGenerator', () => {
         }).take(10),
         'to equal snapshot',
         [
-          'center',
-          'top 60%',
-          ' ',
+          'top 60%,  ',
           'center',
           'center',
+          'center,  2%, center, y-end -998.4425em,  223.3063pt',
           'center',
           'center',
-          ' 416.1452Q',
-          'center',
+          ' , center, center',
+          'center, center, center, center, top ',
+          'bottom , y-start , center',
           'center'
         ]
       );
