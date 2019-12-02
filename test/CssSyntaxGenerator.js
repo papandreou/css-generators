@@ -55,7 +55,7 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator(`<wq-name> | <ns-prefix>? '*'`).take(3), // type-selector
       'to equal snapshot',
-      ['sidfanu | fopcu', 'uf | *', ' *']
+      ['sidfanu | fopcu', 'uf | *', '*']
     );
   });
 
@@ -73,7 +73,7 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator('<color> && <color-stop-angle>?').take(3), // angular-color-stop
       'to equal snapshot',
-      ['ButtonHighlight 60%', ' rgba(5% )', '416.1452rad rgb(97% / 94%)']
+      ['ButtonHighlight 60%', ' rgba(5%)', '416.1452rad rgb(97% / 94%)']
     );
   });
 
@@ -89,7 +89,7 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator("<'border-radius'>").take(3), // shadow
       'to equal snapshot',
-      ['593.086vw ', '78% / 15%', '-688.011cm ']
+      ['593.086vw', '78% / 15%', '-688.011cm']
     );
   });
 

@@ -41,7 +41,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('type-selector').take(3),
       'to equal snapshot',
-      ['sidfanu | fopcu', 'uf | *', ' *']
+      ['sidfanu | fopcu', 'uf | *', '*']
     );
   });
 
@@ -50,7 +50,7 @@ describe('CssNamedSyntaxGenerator', () => {
       new CssNamedSyntaxGenerator('supports-condition').take(3),
       'to equal snapshot',
       [
-        '(zin none, padding bottom / contain border, url(jom)) and ((not selector( #uj ::apli:cuval ( -973.4701vw ) ||  * . ho ::dolbaw:vo)) and ((line-break: normal) and (not (okonokan read-write))))',
+        '(zin none, padding bottom / contain border, url(jom)) and ((not selector(#uj ::apli:cuval ( -973.4701vw ) || * . ho ::dolbaw:vo)) and ((line-break: normal) and (not (okonokan read-write))))',
         'not zeenejom ( hidden )',
         'not uk ( -602.5687in )'
       ]
@@ -100,7 +100,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('angular-color-stop').take(3),
       'to equal snapshot',
-      ['ButtonHighlight 60%', ' rgba(5% )', '416.1452rad rgb(97% / 94%)']
+      ['ButtonHighlight 60%', ' rgba(5%)', '416.1452rad rgb(97% / 94%)']
     );
   });
 
