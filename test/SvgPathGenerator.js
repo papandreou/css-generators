@@ -9,7 +9,7 @@ const SvgPathGenerator = require('../lib/SvgPathGenerator');
 describe('SvgPathGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
-  it('should generate a CSS declaration list', () => {
+  it('should generate an SVG path', () => {
     expect(new SvgPathGenerator().take(10), 'to equal snapshot', [
       'L 91,-64 L 56,20 Q -69,-11 M -80,-89 Q 74,-33 Q -72,42 Q -96,-89 L 45,67 L -58,-100',
       'L -64,24 M 22,5 M -14,-96 M 5,22 Q -72,-91',

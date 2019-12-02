@@ -10,7 +10,7 @@ describe('CssDeclarationValueGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
   describe('with a property name', () => {
-    it('should generate a valid values for that property', () => {
+    it('should generate valid values for that property', () => {
       expect(
         new CssDeclarationValueGenerator({
           propertyName: 'background-position-y'
