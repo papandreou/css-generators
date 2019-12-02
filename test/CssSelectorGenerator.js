@@ -11,15 +11,15 @@ describe('CssSelectorGenerator', () => {
 
   it('supports a simple combinator', () => {
     expect(new CssSelectorGenerator().take(10), 'to equal snapshot', [
-      ':hover',
+      ':focus',
       ':target',
       '::placeholder',
       ':active',
-      ':right',
-      ':target',
-      ':nth-of-type(even)',
-      ':lang(cu) || * + :last-child',
-      '::before',
+      ':required',
+      ':scope',
+      ':nth-last-of-type(even)',
+      ':invalid , *',
+      ':lang(ti)',
       ':first-of-type'
     ]);
   });

@@ -13,7 +13,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('absolute-size').take(3),
       'to equal snapshot',
-      ['small', 'x-large', 'xx-large']
+      ['small', 'xx-large', 'xxx-large']
     );
   });
 
