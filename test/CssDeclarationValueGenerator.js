@@ -17,16 +17,16 @@ describe('CssDeclarationValueGenerator', () => {
         }).take(10),
         'to equal snapshot',
         [
-          'top 60%, ',
+          'top 60%, bottom 416.1452Q',
           'center',
+          'y-end, center, center, 223.3063pt, center',
+          'center, center, bottom',
           'center',
-          'center, 2%, center, y-end -998.4425em, 223.3063pt',
-          'center',
-          'center',
-          ', center, center',
           'center, center, center, center, top',
           'bottom, y-start, center',
-          'center'
+          'center',
+          'y-start -390.7725ch, center, center, top 666.3899ch, center',
+          'center, center, center, bottom, 18%'
         ]
       );
     });
