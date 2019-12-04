@@ -23,4 +23,50 @@ describe('CssStylesheetGenerator', () => {
       "@keyframes 'hebit' {\n  12% {\n  caption-side: inline-start;\n}\n}\n@font-face {\n  font-variant:normal ; font-weight:7876408198037504 ; font-variation-settings:normal ; unicode-range:U+b01? ; src:url(conkacav) format('vultanlac'), url(lizerna) ;\n}\n:last-child { transform-style: flat; border-block-end-width: thin; shape-margin: 54.0482vh; scroll-padding-inline: -558.4608vmax; border-block: rgba(6630277120000000 / 15%) -135.3304rem outset; }\n::first-letter { shape-outside: padding-box polygon(788.1984rem 491.674ex, -937.7319vmin 72%, 125.5006vmax -53.5802px); vertical-align: sub; border-inline-end-width: 737.2464cm; }\n:scope { scrollbar-width: thin; }\n::after { rotate: none; max-height: fit-content; border-bottom-style: dotted; }\n.upanibsa { overflow-y: hidden; font-variant-numeric: tabular-nums slashed-zero; column-width: 180.5279vh; font-variant-position: normal; }\n::slotted(#co ::unjor:zubpocha ( scroll-position )) { image-rendering: crisp-edges; }\n:only-child { padding-inline: 119.2974vh; align-self: center; }\n"
     ]);
   });
+
+  it('should foo', function() {
+    expect.addType({
+      base: 'object',
+      name: 'Generator',
+      identify: v => v && v.isGenerator,
+      inspect: (v, depth, output, inspect) => {
+        output.jsFunctionName(v.generatorName);
+
+        if (typeof v.options !== 'undefined') {
+          output
+            .text('(')
+            .appendInspected(v.options)
+            .text(')');
+        }
+      }
+    });
+
+    expect.addAssertion(
+      '<Generator> to shrink towards <any>',
+      (expect, subject, value) => {
+        expect.errorMode = 'nested';
+
+        let count = 0;
+        const iterator = subject.values();
+        while (iterator.isShrinkable && count < 100) {
+          const value = iterator.next();
+          iterator.shrink(value);
+          count++;
+        }
+
+        if (count === 100) {
+          expect.fail('Could not shrink in 100 iterations');
+        }
+
+        expect(iterator.next(), 'to equal', value);
+      }
+    );
+
+    const generator = new CssStylesheetGenerator();
+    expect(
+      generator,
+      'to shrink towards',
+      'foo { bar: quux; baz: yadda; } hey { there: dude; what: is-up; }'
+    );
+  });
 });
