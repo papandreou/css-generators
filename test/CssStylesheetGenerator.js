@@ -24,7 +24,7 @@ describe('CssStylesheetGenerator', () => {
     ]);
   });
 
-  it('should foo', function() {
+  it('should shrink', function() {
     expect.addType({
       base: 'object',
       name: 'Generator',
@@ -66,7 +66,7 @@ describe('CssStylesheetGenerator', () => {
     expect(
       generator,
       'to shrink towards',
-      'foo { bar: quux; baz: yadda; } hey { there: dude; what: is-up; }'
+      ':checked { text-emphasis-position: right under; }\n'
     );
   });
 });
