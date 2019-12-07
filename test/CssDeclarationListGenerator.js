@@ -1,7 +1,4 @@
-const expect = require('unexpected')
-  .clone()
-  .use(require('unexpected-snapshot'))
-  .use(require('magicpen-prism'));
+const expect = require('./expect');
 const chanceCache = require('chance-generators/lib/chanceCache');
 
 const CssDeclarationListGenerator = require('../lib/CssDeclarationListGenerator');
