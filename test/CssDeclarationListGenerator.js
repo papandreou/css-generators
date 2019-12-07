@@ -20,4 +20,26 @@ describe('CssDeclarationListGenerator', () => {
       'border-inline-start-width: medium; padding-left: 79%; scrollbar-width: thin; background-size: contain; flex: auto;'
     ]);
   });
+
+  describe('when shrinking', function() {
+    it('should shrink', function() {
+      const generator = new CssDeclarationListGenerator();
+      expect(
+        generator,
+        'to shrink towards',
+        '* {scroll-margin-inline-start: 901.4287em;}'
+      );
+    });
+
+    it('should honor the min setting of the original generator', function() {
+      const generator = new CssDeclarationListGenerator({
+        min: 2
+      });
+      expect(
+        generator,
+        'to shrink towards',
+        '* {scroll-margin-inline-start: 901.4287em; perspective-origin: top -688.011cm left 732.3523mm;}'
+      );
+    });
+  });
 });
