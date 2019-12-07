@@ -21,12 +21,46 @@ describe('CssStylesheetGenerator', () => {
     ]);
   });
 
-  it('should shrink', function() {
-    const generator = new CssStylesheetGenerator();
-    expect(
-      generator,
-      'to shrink towards',
-      ':checked { text-emphasis-position: right under; }\n'
-    );
+  describe('when shrinking', function() {
+    it('should shrink', function() {
+      const generator = new CssStylesheetGenerator();
+      expect(
+        generator,
+        'to shrink towards',
+        ':first-child { background-origin: padding-box; }\n'
+      );
+    });
+
+    it('should honor the minStyleRules setting of the original generator', function() {
+      const generator = new CssStylesheetGenerator({
+        minStyleRules: 2,
+        minAtRules: 0
+      });
+      expect(
+        generator,
+        'to shrink towards',
+        ':first { column-span: all; perspective: 275.115in; text-decoration-thickness: from-font; grid-row-start: wus; }\n' +
+          ':checked { text-emphasis-position: right under; }\n'
+      );
+    });
+
+    it('should honor the minAtRules setting of the original generator', function() {
+      const generator = new CssStylesheetGenerator({
+        minAtRules: 2,
+        minStyleRules: 0
+      });
+      expect(
+        generator,
+        'to shrink towards',
+        '@keyframes sidfanu {\n' +
+          '  to {\n' +
+          '  border-end-end-radius: 65%; animation-delay: -887.1769s; page-break-after: recto; transform-box: border-box;\n' +
+          '}\n' +
+          '}\n' +
+          '@font-face {\n' +
+          "  font-style:normal ; src:local('ju'), url(do) format('pu'), local('sof') ;\n" +
+          '}\n'
+      );
+    });
   });
 });

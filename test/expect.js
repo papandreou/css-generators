@@ -33,7 +33,11 @@ expect.addAssertion(
     }
 
     if (count === 100) {
-      expect.fail('Could not shrink in 100 iterations');
+      expect.fail(output => {
+        output
+          .text('Could not shrink in 100 iterations, last value: ')
+          .appendInspected(iterator.next());
+      });
     }
 
     expect(iterator.next(), 'to equal', value);
