@@ -56,13 +56,17 @@ describe('CssSyntaxGenerator', () => {
     );
   });
 
-  it.skip('supports <declaration>', () => {
+  it('supports <declaration>', () => {
     expect(
       new CssSyntaxGenerator(
         '<declaration>? [ ; <page-body> ]? | <page-margin-box> <page-body>'
       ).take(3), // page-body
       'to equal snapshot',
-      []
+      [
+        'transition-delay: -633.1305s ; @bottom-right-corner { grid-area: auto / auto; } ; border-end-end-radius: 65%',
+        'page-break-after: recto ;',
+        '@top-center { column-count: auto; inset-inline-start: -136.11ch; clip: auto; mask-origin: fill-box; }'
+      ]
     );
   });
 
