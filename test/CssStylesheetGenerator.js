@@ -27,7 +27,7 @@ describe('CssStylesheetGenerator', () => {
       expect(
         generator,
         'to shrink towards',
-        ':first-child { background-origin: padding-box; }\n'
+        '::placeholder { scroll-margin-top: -229.167in; }\n'
       );
     });
 
@@ -39,8 +39,7 @@ describe('CssStylesheetGenerator', () => {
       expect(
         generator,
         'to shrink towards',
-        ':first { column-span: all; perspective: 275.115in; text-decoration-thickness: from-font; grid-row-start: wus; }\n' +
-          ':checked { text-emphasis-position: right under; }\n'
+        'cite { column-count: auto; }\n:hover { clip-path: url(gor); }\n'
       );
     });
 
