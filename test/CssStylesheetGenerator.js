@@ -21,6 +21,31 @@ describe('CssStylesheetGenerator', () => {
     ]);
   });
 
+  it('supports configuring the at-rules', function() {
+    expect(
+      new CssStylesheetGenerator({
+        minAtRules: 1,
+        maxAtRules: 1,
+        minStyleRules: 0,
+        maxStyleRules: 0,
+        atRules: { type: '@charset' }
+      }).take(10),
+      'to equal snapshot',
+      [
+        '@charset "CP51932" ;\n',
+        '@charset "EBCDIC-AT-DE" ;\n',
+        '@charset "PT" ;\n',
+        '@charset "ISO_646.basic:1983" ;\n',
+        '@charset "IBM866" ;\n',
+        '@charset "ISO-2022-JP" ;\n',
+        '@charset "ISO-8859-5" ;\n',
+        '@charset "IBM861" ;\n',
+        '@charset "GB_2312-80" ;\n',
+        '@charset "windows-1258" ;\n'
+      ]
+    );
+  });
+
   describe('when shrinking', function() {
     it('should shrink', function() {
       const generator = new CssStylesheetGenerator();
