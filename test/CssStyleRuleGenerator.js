@@ -20,4 +20,26 @@ describe('CssStyleRuleGenerator', () => {
       ':nth-last-of-type(even) { caption-side: block-end; letter-spacing: normal; border-end-end-radius: 604.394em; background-size: auto; font-variant-caps: unicase; }'
     ]);
   });
+
+  describe('when shrinking', function() {
+    it('should shrink', function() {
+      const generator = new CssStyleRuleGenerator();
+      expect(
+        generator,
+        'to shrink towards',
+        ':first-child { background-origin: padding-box; }\n'
+      );
+    });
+
+    it('should honor the minDeclarations setting of the original generator', function() {
+      const generator = new CssStyleRuleGenerator({
+        minDeclarations: 2
+      });
+      expect(
+        generator,
+        'to shrink towards',
+        ':first { column-span: all; perspective: 275.115in; text-decoration-thickness: from-font; grid-row-start: wus; }\n' +
+          ':checked { text-emphasis-position: right under; }\n'
+      );
+    });
 });
