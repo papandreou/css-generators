@@ -31,9 +31,11 @@ describe('CssStyleRuleGenerator', () => {
       );
     });
 
-    it('should honor the minDeclarations setting of the original generator', function() {
+    it('should honor the declarationList setting of the original generator', function() {
       const generator = new CssStyleRuleGenerator({
-        minDeclarations: 2
+        declarationList: {
+          min: 2
+        }
       });
       expect(
         generator,
