@@ -46,6 +46,31 @@ describe('CssStylesheetGenerator', () => {
     );
   });
 
+  it('supports configuring the style rules', function() {
+    expect(
+      new CssStylesheetGenerator({
+        minAtRules: 0,
+        maxAtRules: 0,
+        minStyleRules: 1,
+        maxStyleRules: 1,
+        styleRules: { declarationList: { min: 1, max: 1 } }
+      }).take(10),
+      'to equal snapshot',
+      [
+        '::placeholder { perspective-origin: top -688.011cm left 732.3523mm; }\n',
+        ':read-write { animation-delay: -887.1769s; }\n',
+        '::marker { -webkit-line-clamp: none; }\n',
+        ':only-child { mask-origin: stroke-box; }\n',
+        '.ted { clip: auto; }\n',
+        ':lang(bi) { mask-size: 99%; }\n',
+        '#valbuunu { column-fill: auto; }\n',
+        ':read-only { gap: 219.9933pt normal; }\n',
+        ':hover { border-inline-end-style: groove; }\n',
+        ':in-range { border-left-style: double; }\n'
+      ]
+    );
+  });
+
   describe('when shrinking', function() {
     it('should shrink', function() {
       const generator = new CssStylesheetGenerator();
