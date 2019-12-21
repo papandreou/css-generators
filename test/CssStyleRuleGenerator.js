@@ -7,7 +7,7 @@ describe('CssStyleRuleGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
   it('should generate a CSS style rule', () => {
-    expect(new CssStyleRuleGenerator().take(10), 'to equal snapshot', [
+    expect(new CssStyleRuleGenerator().take(10)).toEqualSnapshot([
       ':focus { transition-delay: -633.1305s; scroll-margin-block: 197.317px; border-image-slice: -7960857937969152 ; text-align: left; }',
       ':nth-of-type(8n+7) { background-clip: content-box; }',
       ':required { transform-box: border-box; -webkit-line-clamp: none; word-wrap: normal; mask-repeat: repeat-x; mask-origin: stroke-box; }',
@@ -24,9 +24,7 @@ describe('CssStyleRuleGenerator', () => {
   describe('when shrinking', function() {
     it('should shrink', function() {
       const generator = new CssStyleRuleGenerator();
-      expect(
-        generator,
-        'to shrink towards',
+      expect(generator).toShrinkTowards(
         ':focus { scroll-margin-block: 197.317px; }'
       );
     });
@@ -37,9 +35,7 @@ describe('CssStyleRuleGenerator', () => {
           min: 2
         }
       });
-      expect(
-        generator,
-        'to shrink towards',
+      expect(generator).toShrinkTowards(
         ':focus { scroll-margin-block: 197.317px; mask-composite: add; }'
       );
     });

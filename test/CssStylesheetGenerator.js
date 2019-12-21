@@ -7,7 +7,7 @@ describe('CssStylesheetGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
   it('should generate a CSS stylesheet', () => {
-    expect(new CssStylesheetGenerator().take(10), 'to equal snapshot', [
+    expect(new CssStylesheetGenerator().take(10)).toEqualSnapshot([
       '@keyframes sidfanu {\n  to {\n  border-end-end-radius: 65%; animation-delay: -887.1769s; page-break-after: recto; transform-box: border-box;\n}\n}\ncite { border-inline-end-style: groove; column-count: auto; inset-inline-start: -136.11ch; clip: auto; mask-origin: fill-box; }\n#lel > , { mask-size: 99%; margin-top: 4%; tab-size: 360.6151em; grid-auto-columns: 95%; }\n::placeholder { scroll-margin-top: -229.167in; animation: step-start; gap: 219.9933pt normal; }\n::first-letter || :hover { border-inline-end-style: groove; right: -149.6883pt; }\n:checked { margin-block-end: -937.3735vw; scroll-snap-align: center; grid-auto-columns: fit-content(789.6547vmin); }\n:nth-last-of-type(odd) { column-width: 140.888em; inset-inline-end: 922.3441in; scroll-snap-align: start; position: relative; left: auto; }\n:nth-last-of-type(even) { caption-side: block-end; letter-spacing: normal; border-end-end-radius: 604.394em; background-size: auto; font-variant-caps: unicase; }\n:hover { clip-path: url(gor); }\n:required { scrollbar-width: thin; background-size: contain; flex: auto; mask-type: luminance; }\n:first-child { background-origin: padding-box; }\n:first { column-span: all; perspective: 275.115in; text-decoration-thickness: from-font; grid-row-start: wus; }\n:required { border-style: ridge; border-top-width: thin; animation-timing-function: ease-in-out; }\n:in-range { animation-duration: -121.327ms; }\n:checked { text-emphasis-position: right under; }\n:left { text-orientation: mixed; border-top-right-radius: 41%; left: auto; border-left-color: rgba(-7620452432216064 , 3508933461278720); }\n::before ::first-line { scroll-margin-top: -408.7326Q; border-block-start: hidden hsla(78.6845grad , 81% , 12% , -3278558025744384) thick; border-block-start-color: hsl(-145.7844deg 82% 35% / -8881960801796096); border-inline: dotted medium; }\n',
       ':first-of-type { transform-origin: left; border-right-color: #8edfc5; }\n:read-write { flex-basis: content; visibility: visible; translate: none; }\n:disabled { image-orientation: flip; border-image: stretch; box-shadow:  -933.8986in ; text-orientation: upright; }\n:dir(rtl) { justify-content: space-around; }\n::slotted(heajiupe | dovki #envewi ::ta ( round ):pufoj ( -581.8568vmin )) { text-decoration: wavy grammar-error from-font; inset-inline: 26%; border-top-color: AppWorkspace; }\n::placeholder { list-style-type: none; text-decoration-line: spelling-error; border-inline-start: medium currentcolor; text-emphasis-position: right under; text-decoration-thickness: from-font; }\n',
       '@keyframes vonlavub {\n  from {\n  column-fill: balance;\n}\n}\n@charset "IBM424" ;\n@charset "IBM277" ;\n::slotted(#higoto ::kimpejeg ( auto ):iwmoj ( 1385377248051200 )) { height: auto; border-inline-start-style: dotted; page-break-before: left; caption-side: block-end; }\n.caznuhijo { transition-duration: 856.6372ms; }\n',
@@ -29,21 +29,19 @@ describe('CssStylesheetGenerator', () => {
         minStyleRules: 0,
         maxStyleRules: 0,
         atRules: { type: '@charset' }
-      }).take(10),
-      'to equal snapshot',
-      [
-        '@charset "CP51932" ;\n',
-        '@charset "EBCDIC-AT-DE" ;\n',
-        '@charset "PT" ;\n',
-        '@charset "ISO_646.basic:1983" ;\n',
-        '@charset "IBM866" ;\n',
-        '@charset "ISO-2022-JP" ;\n',
-        '@charset "ISO-8859-5" ;\n',
-        '@charset "IBM861" ;\n',
-        '@charset "GB_2312-80" ;\n',
-        '@charset "windows-1258" ;\n'
-      ]
-    );
+      }).take(10)
+    ).toEqualSnapshot([
+      '@charset "CP51932" ;\n',
+      '@charset "EBCDIC-AT-DE" ;\n',
+      '@charset "PT" ;\n',
+      '@charset "ISO_646.basic:1983" ;\n',
+      '@charset "IBM866" ;\n',
+      '@charset "ISO-2022-JP" ;\n',
+      '@charset "ISO-8859-5" ;\n',
+      '@charset "IBM861" ;\n',
+      '@charset "GB_2312-80" ;\n',
+      '@charset "windows-1258" ;\n'
+    ]);
   });
 
   it('supports configuring the style rules', function() {
@@ -54,29 +52,25 @@ describe('CssStylesheetGenerator', () => {
         minStyleRules: 1,
         maxStyleRules: 1,
         styleRules: { declarationList: { min: 1, max: 1 } }
-      }).take(10),
-      'to equal snapshot',
-      [
-        '::placeholder { perspective-origin: top -688.011cm left 732.3523mm; }\n',
-        ':read-write { animation-delay: -887.1769s; }\n',
-        '::marker { -webkit-line-clamp: none; }\n',
-        ':only-child { mask-origin: stroke-box; }\n',
-        '.ted { clip: auto; }\n',
-        ':lang(bi) { mask-size: 99%; }\n',
-        '#valbuunu { column-fill: auto; }\n',
-        ':read-only { gap: 219.9933pt normal; }\n',
-        ':hover { border-inline-end-style: groove; }\n',
-        ':in-range { border-left-style: double; }\n'
-      ]
-    );
+      }).take(10)
+    ).toEqualSnapshot([
+      '::placeholder { perspective-origin: top -688.011cm left 732.3523mm; }\n',
+      ':read-write { animation-delay: -887.1769s; }\n',
+      '::marker { -webkit-line-clamp: none; }\n',
+      ':only-child { mask-origin: stroke-box; }\n',
+      '.ted { clip: auto; }\n',
+      ':lang(bi) { mask-size: 99%; }\n',
+      '#valbuunu { column-fill: auto; }\n',
+      ':read-only { gap: 219.9933pt normal; }\n',
+      ':hover { border-inline-end-style: groove; }\n',
+      ':in-range { border-left-style: double; }\n'
+    ]);
   });
 
   describe('when shrinking', function() {
     it('should shrink', function() {
       const generator = new CssStylesheetGenerator();
-      expect(
-        generator,
-        'to shrink towards',
+      expect(generator).toShrinkTowards(
         '::placeholder { scroll-margin-top: -229.167in; }\n'
       );
     });
@@ -86,9 +80,7 @@ describe('CssStylesheetGenerator', () => {
         minStyleRules: 2,
         minAtRules: 0
       });
-      expect(
-        generator,
-        'to shrink towards',
+      expect(generator).toShrinkTowards(
         'cite { column-count: auto; }\n:hover { clip-path: url(gor); }\n'
       );
     });
@@ -98,9 +90,7 @@ describe('CssStylesheetGenerator', () => {
         minAtRules: 2,
         minStyleRules: 0
       });
-      expect(
-        generator,
-        'to shrink towards',
+      expect(generator).toShrinkTowards(
         '@keyframes sidfanu {\n' +
           '  to {\n' +
           '  border-end-end-radius: 65%; animation-delay: -887.1769s; page-break-after: recto; transform-box: border-box;\n' +

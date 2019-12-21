@@ -7,7 +7,7 @@ describe('CssSelectorGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
   it('supports a simple combinator', () => {
-    expect(new CssSelectorGenerator().take(10), 'to equal snapshot', [
+    expect(new CssSelectorGenerator().take(10)).toEqualSnapshot([
       ':focus',
       ':target',
       '::placeholder',
