@@ -33,7 +33,7 @@
     "unassessed": "^0.2.0",
     "unexpected": "^11.8.1",
     "unexpected-check": "^2.2.0",
-    "unexpected-snapshot": "^0.7.0"
+    "unexpected-snapshot": "^0.8.0"
   },
   "dependencies": {
     "chance-generators": "^3.5.2",
