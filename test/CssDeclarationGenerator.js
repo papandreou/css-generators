@@ -7,7 +7,7 @@ describe('CssDeclarationGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
   it('should generate a CSS property + value pair', () => {
-    expect(new CssDeclarationGenerator().take(10), 'to equal snapshot', [
+    expect(new CssDeclarationGenerator().take(10)).toEqualSnapshot([
       'flex-shrink: 5342043492581376',
       'transition-delay: -633.1305s',
       'scroll-margin-block: 197.317px',

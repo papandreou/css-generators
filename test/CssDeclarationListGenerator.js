@@ -7,7 +7,7 @@ describe('CssDeclarationListGenerator', () => {
   beforeEach(() => chanceCache.clear());
 
   it('should generate a CSS declaration list', () => {
-    expect(new CssDeclarationListGenerator().take(10), 'to equal snapshot', [
+    expect(new CssDeclarationListGenerator().take(10)).toEqualSnapshot([
       'scroll-margin-inline-start: 901.4287em; perspective-origin: top -688.011cm left 732.3523mm;',
       'border-end-end-radius: 65%; animation-delay: -887.1769s; page-break-after: recto; transform-box: border-box;',
       'border-inline-end-color: ButtonHighlight;',
@@ -24,9 +24,7 @@ describe('CssDeclarationListGenerator', () => {
   describe('when shrinking', function() {
     it('should shrink', function() {
       const generator = new CssDeclarationListGenerator();
-      expect(
-        generator,
-        'to shrink towards',
+      expect(generator).toShrinkTowards(
         'scroll-margin-inline-start: 901.4287em;'
       );
     });
@@ -35,9 +33,7 @@ describe('CssDeclarationListGenerator', () => {
       const generator = new CssDeclarationListGenerator({
         min: 2
       });
-      expect(
-        generator,
-        'to shrink towards',
+      expect(generator).toShrinkTowards(
         'scroll-margin-inline-start: 901.4287em; perspective-origin: top -688.011cm left 732.3523mm;'
       );
     });
