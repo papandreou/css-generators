@@ -25,7 +25,7 @@ describe('CssStyleRuleGenerator', () => {
     it('should shrink', function() {
       const generator = new CssStyleRuleGenerator();
       expect(generator).toShrinkTowards(
-        ':focus { scroll-margin-block: 197.317px; }'
+        ':focus { border-block-start: inset; }'
       );
     });
 
@@ -36,7 +36,7 @@ describe('CssStyleRuleGenerator', () => {
         }
       });
       expect(generator).toShrinkTowards(
-        ':focus { scroll-margin-block: 197.317px; mask-composite: add; }'
+        ':focus { mask-repeat: repeat-x; empty-cells: hide; }'
       );
     });
   });

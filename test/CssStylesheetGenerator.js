@@ -71,7 +71,7 @@ describe('CssStylesheetGenerator', () => {
     it('should shrink', function() {
       const generator = new CssStylesheetGenerator();
       expect(generator).toShrinkTowards(
-        '::placeholder { scroll-margin-top: -229.167in; }\n'
+        ':focus { scroll-margin-bottom: -264.4337pt; }\n'
       );
     });
 
@@ -81,7 +81,8 @@ describe('CssStylesheetGenerator', () => {
         minAtRules: 0
       });
       expect(generator).toShrinkTowards(
-        'cite { column-count: auto; }\n:hover { clip-path: url(gor); }\n'
+        '* { contain: content; }\n' +
+          ':enabled { grid: auto-flow dense min-content / none; }\n'
       );
     });
 
@@ -93,11 +94,13 @@ describe('CssStylesheetGenerator', () => {
       expect(generator).toShrinkTowards(
         '@keyframes sidfanu {\n' +
           '  to {\n' +
-          '  border-end-end-radius: 65%; animation-delay: -887.1769s; page-break-after: recto; transform-box: border-box;\n' +
+          '  border-image-outset: 2718165087813632; animation-direction: normal; vertical-align: bottom; scroll-padding-bottom: -998.4425em;\n' +
           '}\n' +
           '}\n' +
-          '@font-face {\n' +
-          "  font-style:normal ; src:local('ju'), url(do) format('pu'), local('sof') ;\n" +
+          '@keyframes tima {\n' +
+          '  from {\n' +
+          '  max-inline-size: none; border-image: image-set(element(#taj) 514.2344x); mask-origin: fill-box;\n' +
+          '}\n' +
           '}\n'
       );
     });
