@@ -8,16 +8,16 @@ describe('CssDeclarationListGenerator', () => {
 
   it('should generate a CSS declaration list', () => {
     expect(new CssDeclarationListGenerator().take(10)).toEqualSnapshot([
-      'scroll-margin-inline-start: 901.4287em; perspective-origin: top -688.011cm left 732.3523mm;',
-      'border-end-end-radius: 65%; animation-delay: -887.1769s; page-break-after: recto; transform-box: border-box;',
-      'border-inline-end-color: ButtonHighlight;',
-      'column-count: auto; inset-inline-start: -136.11ch; clip: auto; mask-origin: fill-box;',
-      'background: padding-box right / contain repeat-x rgb(7965998619557888 , 81%) fixed left border-box;',
-      'border-top: hsla(-5884139412652032 , 91% , 39%) 325.0446vh; column-rule: double -937.3735vw; scroll-snap-align: center; grid-auto-columns: fit-content(789.6547vmin);',
-      'page-break-inside: avoid; column-width: 140.888em; inset-inline-end: 922.3441in;',
-      "font-feature-settings: 'ene' 22%; letter-spacing: normal; border-end-end-radius: 604.394em; background-size: auto; font-variant-caps: unicase;",
-      'border-inline-start-width: thin; align-content: normal;',
-      'border-inline-start-width: medium; padding-left: 79%; scrollbar-width: thin; background-size: contain; flex: auto;'
+      'scroll-margin-block-start: 901.4287em; padding-right: 60%;',
+      'border-inline: thin currentcolor; empty-cells: hide; border-image-outset: 2718165087813632;',
+      'background-color: ThreeDDarkShadow;',
+      'touch-action: auto; -webkit-line-clamp: none; word-wrap: normal; min-block-size: auto; max-inline-size: max-content;',
+      'grid-column: auto;',
+      'max-inline-size: none; border-image: image-set(element(#taj) 514.2344x); mask-origin: fill-box;',
+      'shape-image-threshold: 68%;',
+      'grid-template-areas: none;',
+      'transform-style: preserve-3d;',
+      'mask-border: 3318847205539840 url(ebik) repeat luminance; outline-color: invert; contain: strict; list-style-image: url(gazziw); font-variant-alternates: swash(uhlog) annotation(sezsi) ornaments(ju) historical-forms stylistic(bu) character-variant(mahbu) styleset(wot);'
     ]);
   });
 

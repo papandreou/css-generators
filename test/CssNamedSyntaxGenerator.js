@@ -36,9 +36,9 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('supports-condition').take(3)
     ).toEqualSnapshot([
-      '(zin fixed) and (not (wocu ( 67% ) and uf ( -391.5155Q )))',
-      '((not selector(#uj ::apli:cuval ( -973.4701vw ) || * . ho ::dolbaw:vo)) and ((line-height: -630.2911ch) and (okonokan space-between))) and zeenejom ( hidden )',
-      'not uk ( -602.5687in )'
+      '(zin fixed) and (not (wocu ( 67% ) and uf ( outside )))',
+      'not (column-rule: none thin)',
+      '(grid-template-rows: none) or (pu 4%)'
     ]);
   });
 

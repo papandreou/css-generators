@@ -8,16 +8,16 @@ describe('CssDeclarationGenerator', () => {
 
   it('should generate a CSS property + value pair', () => {
     expect(new CssDeclarationGenerator().take(10)).toEqualSnapshot([
-      'flex-shrink: 5342043492581376',
-      'transition-delay: -633.1305s',
-      'scroll-margin-block: 197.317px',
-      'border-image-slice: -7960857937969152 ',
-      'text-align: left',
-      'mask-composite: add',
-      'padding-inline-start: 2%',
-      'background-clip: content-box',
-      'page-break-after: recto',
-      'transform-box: border-box'
+      'font-optical-sizing: none',
+      'transition: step-end',
+      'mask-repeat: repeat-x',
+      'grid-row-start: auto',
+      'border-block-start: inset',
+      'empty-cells: hide',
+      'border-image-outset: 2718165087813632',
+      'animation-direction: normal',
+      'vertical-align: bottom',
+      'scroll-padding-bottom: -998.4425em'
     ]);
   });
 });

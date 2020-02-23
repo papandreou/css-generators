@@ -32,14 +32,14 @@ describe('CssDeclarationValueGenerator', () => {
       expect(new CssDeclarationValueGenerator().take(10)).toEqualSnapshot([
         '96%',
         'pink',
-        'isolate',
-        'fixed',
-        'scroll',
-        '-81.5022vmax -332.5828Q auto 301.777ch',
+        'space-between',
+        '-81.5022vmax',
+        'medium',
+        'mediumvioletred',
+        "'wuw'",
         'none',
-        '67%',
-        'none',
-        'false'
+        'ButtonHighlight',
+        'outside'
       ]);
     });
   });

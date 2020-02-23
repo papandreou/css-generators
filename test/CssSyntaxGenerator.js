@@ -52,9 +52,9 @@ describe('CssSyntaxGenerator', () => {
         '<declaration>? [ ; <page-body> ]? | <page-margin-box> <page-body>'
       ).take(3) // page-body
     ).toEqualSnapshot([
-      'transition-delay: -633.1305s ; @bottom-right-corner { grid-area: auto / auto; } ; border-end-end-radius: 65%',
-      'page-break-after: recto ;',
-      '@top-center { column-count: auto; inset-inline-start: -136.11ch; clip: auto; mask-origin: fill-box; }'
+      'transition: step-end ;',
+      '',
+      '@bottom-left-corner { border-image-outset: 2718165087813632; animation-direction: normal; vertical-align: bottom; scroll-padding-bottom: -998.4425em; } @top-center { column-width: auto; list-style-position: inside; grid-column: auto; list-style-position: outside; }'
     ]);
   });
 
