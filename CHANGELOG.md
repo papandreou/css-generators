@@ -1,3 +1,15 @@
+### v0.2.0 (2020-02-23)
+
+#### Pull requests
+
+- [#11](https://github.com/papandreou/css-generators/pull/11) Upgrade unexpected-snapshot to version 1.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Update expected toShrinkTowards values](https://github.com/papandreou/css-generators/commit/25d3c062e958783795b59cab433a735313f42a25) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update snapshots](https://github.com/papandreou/css-generators/commit/36bc7463dbd917c6925686c1f3023899ad139066) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Switch to mdn-data@2.0.7](https://github.com/papandreou/css-generators/commit/89741bb225449857f1eadeaf8a85cb020d01f503) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+
 ### v0.1.0 (2020-01-11)
 
 #### Pull requests
