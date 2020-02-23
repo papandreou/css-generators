@@ -44,7 +44,7 @@
     "html-validate": "^2.0.1",
     "iso-639-1": "^2.1.0",
     "lodash": "^4.17.15",
-    "mdn-data": "github:mdn/data#4400f8133582f541ab72b2218ef2549df3e53c4d",
+    "mdn-data": "2.0.7",
     "pegjs": "^0.10.0",
     "postcss": "^7.0.23"
   },
