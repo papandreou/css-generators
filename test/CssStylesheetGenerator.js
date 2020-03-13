@@ -71,7 +71,7 @@ describe('CssStylesheetGenerator', () => {
     it('should shrink', function() {
       const generator = new CssStylesheetGenerator();
       expect(generator).toShrinkTowards(
-        ':focus { scroll-margin-bottom: -264.4337pt; }\n'
+        '::slotted([ jimab | lel ] ::gemsibsof:ow) { list-style-image: url(gazziw); }\n'
       );
     });
 
@@ -81,8 +81,8 @@ describe('CssStylesheetGenerator', () => {
         minAtRules: 0
       });
       expect(generator).toShrinkTowards(
-        '* { contain: content; }\n' +
-          ':enabled { grid: auto-flow dense min-content / none; }\n'
+        ':target { scroll-padding-top: -338.204cm; }\n' +
+          ':optional { letter-spacing: normal; }\n'
       );
     });
 
@@ -99,7 +99,7 @@ describe('CssStylesheetGenerator', () => {
           '}\n' +
           '@keyframes tima {\n' +
           '  from {\n' +
-          '  max-inline-size: none; border-image: image-set(element(#taj) 514.2344x); mask-origin: fill-box;\n' +
+          '  max-inline-size: 14%; background: padding-box right / contain repeat-x rgb(7965998619557888 , 81%) fixed left border-box; overflow-wrap: normal;\n' +
           '}\n' +
           '}\n'
       );
