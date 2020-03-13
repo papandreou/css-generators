@@ -9,14 +9,14 @@ describe('CssSelectorGenerator', () => {
   it('supports a simple combinator', () => {
     expect(new CssSelectorGenerator().take(10)).toEqualSnapshot([
       ':focus',
-      ':target',
-      '::placeholder',
+      ':valid',
+      '::marker',
       ':active',
-      ':required',
-      ':scope',
-      ':nth-last-of-type(even)',
-      ':invalid , *',
-      ':lang(ti)',
+      ':right',
+      ':target',
+      ':nth-of-type(even)',
+      ':lang(cu) * + :last-child',
+      '::before',
       ':first-of-type'
     ]);
   });

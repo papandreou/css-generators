@@ -36,9 +36,9 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('supports-condition').take(3)
     ).toEqualSnapshot([
-      '(zin fixed) and (not (wocu ( 67% ) and uf ( outside )))',
-      'not (column-rule: none thin)',
-      '(grid-template-rows: none) or (pu 4%)'
+      '(zin fixed) and (not (wocu ( 67% ) and uf ( url(bibro) )))',
+      '(not ((grid-template-rows: none) or (pu 4%))) and (naowruj -804.6558ex)',
+      '(ebik ( 325.0446vh ) and ((margin-inline-end: 18%) and ((muwwuh 140.888em) or (transition-property: none)))) or ruluhred ( thick )'
     ]);
   });
 

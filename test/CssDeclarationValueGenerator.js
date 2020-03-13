@@ -32,14 +32,14 @@ describe('CssDeclarationValueGenerator', () => {
       expect(new CssDeclarationValueGenerator().take(10)).toEqualSnapshot([
         '96%',
         'pink',
-        'space-between',
-        '-81.5022vmax',
-        'medium',
-        'mediumvioletred',
-        "'wuw'",
-        'none',
+        'left',
+        'scroll',
+        '-81.5022vmax -332.5828Q auto 301.777ch',
+        '939.8197rem 664.8853vw auto auto',
         'ButtonHighlight',
-        'outside'
+        'url(bibro)',
+        'start',
+        'hsl(-4813963569135616 , 46% , 9% , 20%)'
       ]);
     });
   });

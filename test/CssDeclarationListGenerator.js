@@ -11,13 +11,13 @@ describe('CssDeclarationListGenerator', () => {
       'scroll-margin-block-start: 901.4287em; padding-right: 60%;',
       'border-inline: thin currentcolor; empty-cells: hide; border-image-outset: 2718165087813632;',
       'background-color: ThreeDDarkShadow;',
-      'touch-action: auto; -webkit-line-clamp: none; word-wrap: normal; min-block-size: auto; max-inline-size: max-content;',
-      'grid-column: auto;',
-      'max-inline-size: none; border-image: image-set(element(#taj) 514.2344x); mask-origin: fill-box;',
-      'shape-image-threshold: 68%;',
+      'touch-action: auto; -webkit-line-clamp: none; word-wrap: normal; min-block-size: 223.3063pt; align-items: stretch;',
+      'column-rule: none thin;',
+      'font-feature-settings: normal; grid-template-rows: none; scrollbar-width: thin; border-radius: 28.4689vw / -907.0992vmax; max-block-size: max-content;',
       'grid-template-areas: none;',
       'transform-style: preserve-3d;',
-      'mask-border: 3318847205539840 url(ebik) repeat luminance; outline-color: invert; contain: strict; list-style-image: url(gazziw); font-variant-alternates: swash(uhlog) annotation(sezsi) ornaments(ju) historical-forms stylistic(bu) character-variant(mahbu) styleset(wot);'
+      'mask-border: 3318847205539840 url(ebik) repeat luminance; outline-color: invert; contain: strict; list-style-image: url(gazziw); font-variant-alternates: swash(uhlog) annotation(sezsi) ornaments(ju) historical-forms stylistic(bu) character-variant(mahbu) styleset(wot);',
+      'max-block-size: auto; text-transform: uppercase; opacity: 7475248958013440; shape-margin: 62%;'
     ]);
   });
 
