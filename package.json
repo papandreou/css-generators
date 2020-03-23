@@ -31,7 +31,7 @@
     "mocha": "^7.0.0",
     "nyc": "^15.0.0",
     "offline-github-changelog": "^1.6.1",
-    "prettier": "~1.19.1",
+    "prettier": "~2.0.1",
     "unassessed": "^0.2.0",
     "unexpected": "^11.8.1",
     "unexpected-check": "^2.2.0",
