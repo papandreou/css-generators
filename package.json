@@ -5,9 +5,9 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha",
-    "lint": "eslint .",
+    "lint": "eslint . && prettier --check '**/*.{js,md}",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
-    "ci": "npm run coverage && npm run lint && prettier --check '**/*.js'",
+    "test:ci": "npm run coverage",
     "preversion": "offline-github-changelog --next=${npm_package_version} > CHANGELOG.md && git add CHANGELOG.md"
   },
   "keywords": [
