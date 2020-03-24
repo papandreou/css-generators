@@ -30,7 +30,7 @@ describe('CssSyntaxGenerator', () => {
     ).toEqualSnapshot([
       'scale3d(-2260084377780224 , 5342043492581376 , 8119347222413312)',
       'scale3d(-5702731889115136 , 4179231256870912 , 5038465087438848)',
-      'scale3d(1777273287999488 , 1744697403899904 , -6196617325576192)'
+      'scale3d(1777273287999488 , 1744697403899904 , -6196617325576192)',
     ]);
   });
 
@@ -54,7 +54,7 @@ describe('CssSyntaxGenerator', () => {
     ).toEqualSnapshot([
       'transition: step-end ;',
       '',
-      '@bottom-left-corner { border-image-outset: 2718165087813632; animation-direction: normal; vertical-align: bottom; scroll-padding-bottom: -998.4425em; } @top-center { column-width: auto; list-style-position: inside; grid-column: auto; list-style-position: outside; }'
+      '@bottom-left-corner { border-image-outset: 2718165087813632; animation-direction: normal; vertical-align: bottom; scroll-padding-bottom: -998.4425em; } @top-center { column-width: auto; list-style-position: inside; grid-column: auto; list-style-position: outside; }',
     ]);
   });
 
@@ -64,7 +64,7 @@ describe('CssSyntaxGenerator', () => {
     ).toEqualSnapshot([
       'ButtonHighlight 60%',
       ' rgba(5%)',
-      '416.1452rad rgb(97% / 94%)'
+      '416.1452rad rgb(97% / 94%)',
     ]);
   });
 
@@ -74,7 +74,7 @@ describe('CssSyntaxGenerator', () => {
     ).toEqualSnapshot([
       '-633.1305rem #98cb2c ',
       '-883.8328pc inset ',
-      '301.777ch  saddlebrown'
+      '301.777ch  saddlebrown',
     ]);
   });
 
@@ -85,7 +85,7 @@ describe('CssSyntaxGenerator', () => {
   });
 
   // https://drafts.csswg.org/css-values-3/#component-types
-  it('should handle commas between optional items', function() {
+  it('should handle commas between optional items', function () {
     expect(
       new CssSyntaxGenerator('foo( <number>?, <number>?, <number>? )').take(10)
     ).toEqualSnapshot([
@@ -98,7 +98,7 @@ describe('CssSyntaxGenerator', () => {
       'foo()',
       'foo(-5703277324795904 , -3526458282606592 , 445972312227840)',
       'foo()',
-      'foo(2014962675351552)'
+      'foo(2014962675351552)',
     ]);
   });
 });

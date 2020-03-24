@@ -16,7 +16,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(new CssNamedSyntaxGenerator('scale3d()').take(3)).toEqualSnapshot([
       'scale3d(-2260084377780224 , 5342043492581376 , 8119347222413312)',
       'scale3d(-5702731889115136 , 4179231256870912 , 5038465087438848)',
-      'scale3d(1777273287999488 , 1744697403899904 , -6196617325576192)'
+      'scale3d(1777273287999488 , 1744697403899904 , -6196617325576192)',
     ]);
   });
 
@@ -38,7 +38,7 @@ describe('CssNamedSyntaxGenerator', () => {
     ).toEqualSnapshot([
       '(zin fixed) and (not (wocu ( 67% ) and uf ( url(bibro) )))',
       '(not ((grid-template-rows: none) or (pu 4%))) and (naowruj -804.6558ex)',
-      '(ebik ( 325.0446vh ) and ((margin-inline-end: 18%) and ((muwwuh 140.888em) or (transition-property: none)))) or ruluhred ( thick )'
+      '(ebik ( 325.0446vh ) and ((margin-inline-end: 18%) and ((muwwuh 140.888em) or (transition-property: none)))) or ruluhred ( thick )',
     ]);
   });
 
@@ -52,7 +52,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(new CssNamedSyntaxGenerator('name-repeat').take(3)).toEqualSnapshot([
       'repeat(80% , [ wosalda ])',
       'repeat(87% , [ fopcu ])',
-      'repeat(auto-fill , [ gafgohrak ])'
+      'repeat(auto-fill , [ gafgohrak ])',
     ]);
   });
 
@@ -67,7 +67,7 @@ describe('CssNamedSyntaxGenerator', () => {
       '-883.8328kHz',
       '732.3523grad',
       '202.23dpi',
-      '416.1452Q'
+      '416.1452Q',
     ]);
   });
 
@@ -77,7 +77,7 @@ describe('CssNamedSyntaxGenerator', () => {
     ).toEqualSnapshot([
       'ButtonHighlight 60%',
       ' rgba(5%)',
-      '416.1452rad rgb(97% / 94%)'
+      '416.1452rad rgb(97% / 94%)',
     ]);
   });
 
@@ -85,7 +85,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(new CssNamedSyntaxGenerator('shadow').take(3)).toEqualSnapshot([
       '-633.1305rem #98cb2c ',
       '-883.8328pc inset ',
-      '301.777ch  saddlebrown'
+      '301.777ch  saddlebrown',
     ]);
   });
 
@@ -99,7 +99,7 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(new CssNamedSyntaxGenerator('string').take(3)).toEqualSnapshot([
       "'ofosid'",
       "'daej'",
-      "'wocu'"
+      "'wocu'",
     ]);
   });
 });

@@ -10,7 +10,7 @@ describe('CssDeclarationValueGenerator', () => {
     it('should generate valid values for that property', () => {
       expect(
         new CssDeclarationValueGenerator({
-          propertyName: 'background-position-y'
+          propertyName: 'background-position-y',
         }).take(10)
       ).toEqualSnapshot([
         'top 60%, bottom 416.1452Q',
@@ -22,7 +22,7 @@ describe('CssDeclarationValueGenerator', () => {
         'bottom, y-start, center',
         'center',
         'y-start -390.7725ch, center, center, top 666.3899ch, center',
-        'center, center, center, bottom, 18%'
+        'center, center, center, bottom, 18%',
       ]);
     });
   });
@@ -39,7 +39,7 @@ describe('CssDeclarationValueGenerator', () => {
         'ButtonHighlight',
         'url(bibro)',
         'start',
-        'hsl(-4813963569135616 , 46% , 9% , 20%)'
+        'hsl(-4813963569135616 , 46% , 9% , 20%)',
       ]);
     });
   });

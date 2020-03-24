@@ -17,18 +17,18 @@ describe('CssStylesheetGenerator', () => {
       "@font-face {\n  font-stretch:ultra-condensed ; font-family:awvooh ; font-variant:normal ;\n}\n@keyframes 'sij' {\n  from {\n  border: currentcolor; word-spacing: 97%; grid-row-start: baahpu 54%; box-sizing: border-box;\n}\n}\n@font-face {\n  src:local(jevzova) ; unicode-range:U+45f4 ; font-variant:normal ; font-variation-settings:normal ; font-feature-settings:normal ;\n}\n:right { text-indent: hanging  27%; grid-row-end: span zebuwen; shape-margin: -53.5802px; unicode-bidi: normal; border-inline-start-width: 737.2464cm; }\n:target { right: 85%; }\n:not(iw | golbador #gelco ::so ( hsla(-637734913835008 7% 68%) ):sohvov || | feunbi . wezaw ::rav:ac) { font-variant-alternates: normal; border-end-end-radius: 57%; }\n",
       ":read-write { scroll-padding: auto; backdrop-filter: none; outline-width: 903.1Q; border-bottom-style: ridge; text-decoration-thickness: auto; }\n:nth-of-type(odd) { background-blend-mode: soft-light; margin-bottom: 418.1211vw; table-layout: fixed; padding-block-start: 80%; }\n:target { max-inline-size: max-content; inset-block-start: 321.6402vmin; }\n:nth-child(even of * . ranas ::taip:nes * [ bop ] ::rul:mo ( linear )) { animation-name: none, usi; page-break-inside: avoid; grid-auto-flow: row dense; }\n:scope { justify-self: auto; margin-inline: auto; line-height: 176.1168pc; animation-iteration-count: -1882231429660672; inset-inline: 88%; }\n:nth-of-type(odd) { grid-area: 19%  / span esezo; font-variant-ligatures: no-common-ligatures no-discretionary-ligatures contextual; font-weight: lighter; background-size: cover; }\n:invalid { border-block-end-width: thick; font-variant-ligatures: none; }\n:nth-of-type(even) { font: message-box; mask-origin: padding-box; font-synthesis: none; }\n::selection { break-before: avoid-region; orphans: -99%; }\n:first-child { right: 13%; font-variant-alternates: character-variant(ner) historical-forms; scroll-padding-block-end: auto; }\n:invalid { box-shadow: -494.9445em  ; font-size: large; page-break-after: avoid; }\n:out-of-range { inline-size: max-content; scroll-padding-left: 45%; mask-composite: exclude; }\n::before { border-right-color: #1ca6c3; animation-play-state: running; word-break: normal; }\n:not(: del ::kasarmu:baztusig ~ . fabkaofo ::gas ( border-box ):hoezuva ( large )) ~ ::after { shape-margin: 77%; animation-name: 'vofvuktic'; flex-grow: 2843488311836672; border-inline-end: outset thick hsla(504.8555turn , 9% , 57%); page-break-before: auto; }\n",
       "@charset \"IBM904\" ;\n@font-face {\n  font-stretch:ultra-expanded ; font-variant:historical-ligatures historical-forms ornaments(basar) all-petite-caps no-common-ligatures stylistic(peezipub) stacked-fractions swash(lari) ; font-variation-settings:normal ; font-style:italic ; font-weight:bold ; font-feature-settings:'ruswum' ; unicode-range:U+d288-e61f ; font-family:ogo ; src:url(ol), url(po), local('otrihto'), local('mud'), local('efo') ;\n}\n@charset \"BS_viewdata\" ;\n:required { border-block-start-style: ridge; mask-border-outset: -486.8745vmin; }\n::placeholder { inset-block-start: 611.9851vmax; margin-left: 4%; list-style-type: 'bop'; }\n:visited { text-decoration-color: #3a636f; scroll-margin-block: -575.9104Q; max-inline-size: -177.9431mm; }\n::backdrop { text-emphasis: none hsl(-4056733844504576 , 73% , 83% , 3088112246849536); outline-style: none; quotes: auto; border-image-source: none; grid-auto-columns: minmax(-663.9716ex , max-content); }\n::cue(:last-child) { margin-block-end: -643.1081ch; content: none; }\n:dir(rtl) { margin-inline-end: 23%; break-after: page; }\n:only-of-type { background-image: none; border-image-outset: -4061521600577536; border-end-start-radius: 70%; }\n:read-only { grid-row-end: wobkat; border-block-start-color: #b96e44; flex: -7576507073429504 content; }\n:optional { mask-position: center; border-top-color: hsl(-861.1524grad 52% 84%); outline-width: thick; background-size: auto; margin-bottom: 760.1582px; }\n:optional { margin-block: -351.3325pc; empty-cells: show; outline-width: 988.2788mm; outline-color: #fed7cf; }\n:right { hyphens: manual; background-image: element(#ufo); overflow-y: scroll; }\n:checked { margin-block-end: 9%; }\n:in-range { scroll-padding: -304.857in; outline-offset: 962.4728vh; inline-size: fit-content(-530.7159cm); }\n:indeterminate { border-image-width: 74%; text-transform: full-width; margin-bottom: 684.0666rem; list-style-image: url(doedo); scroll-padding-block-start: 16%; }\n",
-      "@font-face {\n  unicode-range:U+3d32 ; src:url(on) format('otsu'), local(pudi), local(imuado), url(cek), url(hez) format('otipu') ;\n}\n@font-face {\n  font-variation-settings:'fojci' -8542213340397568, 'huro' 8391506159206400, 'se' 7862369405370368, 'nectaf' -8688564044824576, 'tedci' 5057751147347968 ; font-variant:normal ; font-family:'pu' ; font-weight:-7966317168558080 ; font-feature-settings:'ukfado' ; font-style:normal ; unicode-range:U+19de-b928 ; font-stretch:expanded ; src:local(hof), url(viv), local('miplemit') ;\n}\n:right || :hover { transition-timing-function: linear; box-decoration-break: slice; border-end-end-radius: -162.8388ch; scroll-margin: -480.3736px; }\n:scope { border-end-start-radius: 70.6203Q; border-spacing: -352.9992ch -517.5971Q; white-space: pre; scroll-margin-bottom: -870.7667vw; }\n"
+      "@font-face {\n  unicode-range:U+3d32 ; src:url(on) format('otsu'), local(pudi), local(imuado), url(cek), url(hez) format('otipu') ;\n}\n@font-face {\n  font-variation-settings:'fojci' -8542213340397568, 'huro' 8391506159206400, 'se' 7862369405370368, 'nectaf' -8688564044824576, 'tedci' 5057751147347968 ; font-variant:normal ; font-family:'pu' ; font-weight:-7966317168558080 ; font-feature-settings:'ukfado' ; font-style:normal ; unicode-range:U+19de-b928 ; font-stretch:expanded ; src:local(hof), url(viv), local('miplemit') ;\n}\n:right || :hover { transition-timing-function: linear; box-decoration-break: slice; border-end-end-radius: -162.8388ch; scroll-margin: -480.3736px; }\n:scope { border-end-start-radius: 70.6203Q; border-spacing: -352.9992ch -517.5971Q; white-space: pre; scroll-margin-bottom: -870.7667vw; }\n",
     ]);
   });
 
-  it('supports configuring the at-rules', function() {
+  it('supports configuring the at-rules', function () {
     expect(
       new CssStylesheetGenerator({
         minAtRules: 1,
         maxAtRules: 1,
         minStyleRules: 0,
         maxStyleRules: 0,
-        atRules: { type: '@charset' }
+        atRules: { type: '@charset' },
       }).take(10)
     ).toEqualSnapshot([
       '@charset "CP51932" ;\n',
@@ -40,18 +40,18 @@ describe('CssStylesheetGenerator', () => {
       '@charset "ISO-8859-5" ;\n',
       '@charset "IBM861" ;\n',
       '@charset "GB_2312-80" ;\n',
-      '@charset "windows-1258" ;\n'
+      '@charset "windows-1258" ;\n',
     ]);
   });
 
-  it('supports configuring the style rules', function() {
+  it('supports configuring the style rules', function () {
     expect(
       new CssStylesheetGenerator({
         minAtRules: 0,
         maxAtRules: 0,
         minStyleRules: 1,
         maxStyleRules: 1,
-        styleRules: { declarationList: { min: 1, max: 1 } }
+        styleRules: { declarationList: { min: 1, max: 1 } },
       }).take(10)
     ).toEqualSnapshot([
       '::marker { padding-right: 60%; }\n',
@@ -63,22 +63,22 @@ describe('CssStylesheetGenerator', () => {
       '[contenteditable=zejaaf] || :required { padding-left: 77%; }\n',
       '::first-line { opacity: 7475248958013440; }\n',
       ':only-of-type { display: block; }\n',
-      ':out-of-range { mask-origin: stroke-box; }\n'
+      ':out-of-range { mask-origin: stroke-box; }\n',
     ]);
   });
 
-  describe('when shrinking', function() {
-    it('should shrink', function() {
+  describe('when shrinking', function () {
+    it('should shrink', function () {
       const generator = new CssStylesheetGenerator();
       expect(generator).toShrinkTowards(
         '::slotted([ jimab | lel ] ::gemsibsof:ow) { list-style-image: url(gazziw); }\n'
       );
     });
 
-    it('should honor the minStyleRules setting of the original generator', function() {
+    it('should honor the minStyleRules setting of the original generator', function () {
       const generator = new CssStylesheetGenerator({
         minStyleRules: 2,
-        minAtRules: 0
+        minAtRules: 0,
       });
       expect(generator).toShrinkTowards(
         ':target { scroll-padding-top: -338.204cm; }\n' +
@@ -86,10 +86,10 @@ describe('CssStylesheetGenerator', () => {
       );
     });
 
-    it('should honor the minAtRules setting of the original generator', function() {
+    it('should honor the minAtRules setting of the original generator', function () {
       const generator = new CssStylesheetGenerator({
         minAtRules: 2,
-        minStyleRules: 0
+        minStyleRules: 0,
       });
       expect(generator).toShrinkTowards(
         '@keyframes sidfanu {\n' +

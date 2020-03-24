@@ -17,7 +17,7 @@ describe('CssDeclarationGenerator', () => {
       'border-image-outset: 2718165087813632',
       'animation-direction: normal',
       'vertical-align: bottom',
-      'scroll-padding-bottom: -998.4425em'
+      'scroll-padding-bottom: -998.4425em',
     ]);
   });
 });

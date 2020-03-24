@@ -17,23 +17,23 @@ describe('CssStyleRuleGenerator', () => {
       '::slotted(heajiupe | dovki #envewi ::ta ( round ):pufoj ( auto )) { text-shadow:  -542.9Q; border-inline-end-width: thick; }',
       '::selection { list-style: symbols() none; mask: match-source view-box url(movecuaw) top -797.057vw right 0% fill-box repeat-y subtract; overscroll-behavior: none; }',
       ':optional { border-top: rgb(49%); border-inline-start: inset midnightblue thin; mask-border-outset: -7319704678957056; letter-spacing: normal; offset: Q -13,59 Q 1,29 Q 34,-2 L -61,-54 L 0,-44 Q -96,54 Q -92,-65 L 89,-6 L -44,83 L -26,50 M 91,86 M -14,11 L 15,93 L 71,-85 M -39,-23 M 71,-47 M -3,-66 Q 11,-21 L 69,39 view-box 230.0145rem / auto; }',
-      ':disabled > :link { text-align-last: end; page-break-inside: avoid; }'
+      ':disabled > :link { text-align-last: end; page-break-inside: avoid; }',
     ]);
   });
 
-  describe('when shrinking', function() {
-    it('should shrink', function() {
+  describe('when shrinking', function () {
+    it('should shrink', function () {
       const generator = new CssStyleRuleGenerator();
       expect(generator).toShrinkTowards(
         ':focus { border-block-start: inset; }'
       );
     });
 
-    it('should honor the declarationList setting of the original generator', function() {
+    it('should honor the declarationList setting of the original generator', function () {
       const generator = new CssStyleRuleGenerator({
         declarationList: {
-          min: 2
-        }
+          min: 2,
+        },
       });
       expect(generator).toShrinkTowards(
         ':focus { mask-repeat: repeat-x; empty-cells: hide; }'

@@ -17,21 +17,21 @@ describe('CssDeclarationListGenerator', () => {
       'grid-template-areas: none;',
       'transform-style: preserve-3d;',
       'mask-border: 3318847205539840 url(ebik) repeat luminance; outline-color: invert; contain: strict; list-style-image: url(gazziw); font-variant-alternates: swash(uhlog) annotation(sezsi) ornaments(ju) historical-forms stylistic(bu) character-variant(mahbu) styleset(wot);',
-      'max-block-size: auto; text-transform: uppercase; opacity: 7475248958013440; shape-margin: 62%;'
+      'max-block-size: auto; text-transform: uppercase; opacity: 7475248958013440; shape-margin: 62%;',
     ]);
   });
 
-  describe('when shrinking', function() {
-    it('should shrink', function() {
+  describe('when shrinking', function () {
+    it('should shrink', function () {
       const generator = new CssDeclarationListGenerator();
       expect(generator).toShrinkTowards(
         'scroll-margin-block-start: 901.4287em;'
       );
     });
 
-    it('should honor the min setting of the original generator', function() {
+    it('should honor the min setting of the original generator', function () {
       const generator = new CssDeclarationListGenerator({
-        min: 2
+        min: 2,
       });
       expect(generator).toShrinkTowards(
         'scroll-margin-block-start: 901.4287em; mask-repeat: repeat-x;'

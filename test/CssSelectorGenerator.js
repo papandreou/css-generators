@@ -17,7 +17,7 @@ describe('CssSelectorGenerator', () => {
       ':nth-of-type(even)',
       ':lang(cu) * + :last-child',
       '::before',
-      ':first-of-type'
+      ':first-of-type',
     ]);
   });
 });

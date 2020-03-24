@@ -1,21 +1,18 @@
 const expect = require('unassessed').withUnexpectedPlugins(
   require('unexpected-snapshot'),
   require('magicpen-prism'),
-  expect => {
+  (expect) => {
     expect.addType({
       base: 'object',
       name: 'Generator',
-      identify: v => v && v.isGenerator,
+      identify: (v) => v && v.isGenerator,
       inspect: (v, depth, output, inspect) => {
         output.jsFunctionName(v.generatorName);
 
         if (typeof v.options !== 'undefined') {
-          output
-            .text('(')
-            .appendInspected(v.options)
-            .text(')');
+          output.text('(').appendInspected(v.options).text(')');
         }
-      }
+      },
     });
 
     expect.addAssertion(
@@ -32,7 +29,7 @@ const expect = require('unassessed').withUnexpectedPlugins(
         }
 
         if (count === 100) {
-          expect.fail(output => {
+          expect.fail((output) => {
             output
               .text('Could not shrink in 100 iterations, last value: ')
               .appendInspected(iterator.next());
