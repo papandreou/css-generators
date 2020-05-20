@@ -41,7 +41,7 @@
     "chance-generators": "^3.5.2",
     "character-sets": "^1.0.8",
     "css-syntax-parser": "^1.5.1",
-    "html-validate": "2.22.0",
+    "html-validate": "2.23.0",
     "iso-639-1": "^2.1.0",
     "lodash": "^4.17.15",
     "mdn-data": "2.0.8",
