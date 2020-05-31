@@ -20,6 +20,13 @@ describe('CssNamedSyntaxGenerator', () => {
     ]);
   });
 
+  // https://drafts.csswg.org/css-values-3/#numeric-ranges
+  it('supports the bracketed range restriction syntax with <number>', () => {
+    expect(
+      new CssNamedSyntaxGenerator('number [10,14]').take(3)
+    ).toEqualSnapshot(['11', '13', '14']);
+  });
+
   it('supports a double bar combinator', () => {
     expect(
       new CssNamedSyntaxGenerator('side-or-corner').take(3)
