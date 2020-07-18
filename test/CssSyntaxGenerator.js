@@ -22,6 +22,16 @@ describe('CssSyntaxGenerator', () => {
     ).toEqualSnapshot(['small', 'x-large', 'xx-large']);
   });
 
+  it('supports a range on a keyword', () => {
+    expect(new CssSyntaxGenerator('foo{1,2}').take(5)).toEqualSnapshot([
+      'foo',
+      'foo foo',
+      'foo foo',
+      'foo',
+      'foo foo',
+    ]);
+  });
+
   it('supports a function call with parameters', () => {
     expect(
       new CssSyntaxGenerator('scale3d( <number> , <number> , <number> )').take(
