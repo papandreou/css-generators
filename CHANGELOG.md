@@ -1,3 +1,8 @@
+### v0.2.2 (2020-07-18)
+
+- [Add a quick test of the main export](https://github.com/papandreou/css-generators/commit/b0555e2746c4d2fca99ced6a27a19a1a766e50cb) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Unbreak the facades \(broken in 313b961\)](https://github.com/papandreou/css-generators/commit/db97fbbdcb1b79c438ab640e2efece1d7e108c69) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+
 ### v0.2.1 (2020-07-18)
 
 #### Pull requests
