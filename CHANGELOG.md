@@ -1,3 +1,29 @@
+### v0.2.1 (2020-07-18)
+
+#### Pull requests
+
+- [#28](https://github.com/papandreou/css-generators/pull/28) Upgrade mdn-data to version 2.0.10 ([Andreas Lind](mailto:andreas.lind@peakon.com), [depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#27](https://github.com/papandreou/css-generators/pull/27) Upgrade html-validate to version 3.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#26](https://github.com/papandreou/css-generators/pull/26) Upgrade html-validate to version 2.23.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#25](https://github.com/papandreou/css-generators/pull/25) Upgrade mocha to version 8.0.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#23](https://github.com/papandreou/css-generators/pull/23) Upgrade html-validate to version 2.23.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#21](https://github.com/papandreou/css-generators/pull/21) Upgrade eslint-plugin-mocha to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#20](https://github.com/papandreou/css-generators/pull/20) Upgrade eslint to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#19](https://github.com/papandreou/css-generators/pull/19) Upgrade html-validate to version 2.21.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#18](https://github.com/papandreou/css-generators/pull/18) Upgrade html-validate to version 2.20.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#17](https://github.com/papandreou/css-generators/pull/17) Upgrade html-validate to version 2.20.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#16](https://github.com/papandreou/css-generators/pull/16) Upgrade html-validate to version 2.19.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#12](https://github.com/papandreou/css-generators/pull/12) New version of html-validate \(2.17.0\) broke the build ([Andreas Lind](mailto:andreas.lind@peakon.com), [depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Support a range on a keyword](https://github.com/papandreou/css-generators/commit/ce3d83660ee4ed594d8b9a5b0cf83330661248d2) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update snapshots](https://github.com/papandreou/css-generators/commit/6a999604ac185118e624b39aa3cb227d8894ecd1) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Add support for numeric ranges with &lt;number&gt;](https://github.com/papandreou/css-generators/commit/313b961c88382dfa9ed8ec3234f7bb70fd4533b7) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Update mdn-data to version 2.0.9](https://github.com/papandreou/css-generators/commit/5490122778013369c994f1a35fd43c0271939ab6) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [Update snapshots](https://github.com/papandreou/css-generators/commit/631feb25748cb0cd000ee6d793a7a590d7ace2c9) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [+14 more](https://github.com/papandreou/css-generators/compare/v0.2.0...v0.2.1)
+
 ### v0.2.0 (2020-02-23)
 
 #### Pull requests
