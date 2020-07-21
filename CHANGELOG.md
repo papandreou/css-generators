@@ -1,3 +1,8 @@
+### v0.2.3 (2020-07-21)
+
+- [Update snapshots](https://github.com/papandreou/css-generators/commit/2cda3d99fdd5f966c3d7f5b62ea93f943cca5380) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Switch to mdn-data-papandreou to get mdn\/data\#420](https://github.com/papandreou/css-generators/commit/194d54b54ccd50b5e70ed766ef0ef57483b660ed) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+
 ### v0.2.2 (2020-07-18)
 
 - [Add a quick test of the main export](https://github.com/papandreou/css-generators/commit/b0555e2746c4d2fca99ced6a27a19a1a766e50cb) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
