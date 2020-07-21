@@ -19,7 +19,7 @@ describe('CssAtRuleGenerator', () => {
       "@font-face {\n  src:local('ovakod'), url(irevaumi) format('uc'), local(ipaje), local(eviipuod), local(sajopbed) ;\n}",
       '@font-face {\n  font-feature-settings:normal ; font-variant:normal ; font-style:italic ;\n}',
       "@font-face {\n  src:local('tehi'), local(iwmoj), local(pufwi) ; font-variation-settings:normal ; unicode-range:U+926e-e6a4 ;\n}",
-      '@font-face {\n  font-style:normal ; font-weight:7715901327540224 ;\n}',
+      '@font-face {\n  font-style:normal ; font-weight:929 ;\n}',
     ]);
   });
 

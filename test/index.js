@@ -6,7 +6,7 @@ describe('css-generators', function () {
     expect(cssGenerators.namedSyntax('font-weight').take(5)).toEqualSnapshot([
       'bolder',
       'bold',
-      '2945385903423488',
+      '664',
       'lighter',
       'normal',
     ]);
