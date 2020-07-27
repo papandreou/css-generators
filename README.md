@@ -156,11 +156,13 @@ counterexample:
 
   Generated input: ':read-only { text-decoration-line: none; word-wrap: normal; }\n::backdrop { hanging-punctuation: last force-end first; border-inline-start: dotted; margin-bottom: -670.3704cm; }\n::slotted(: wupgoj ( left ) ::gozerza ( repeat fill 39% / -666.2298mm ):pipcan) { mask-border: round none -7619040671432704 3520295415578624 / 52%; }\n:first-of-type { border-top-style: dashed; background-origin: content-box; quotes: \'tatoaf\' \'uvlonsef\'; }\n'
   with: stylesheet({
-    minAtRules: 0, maxAtRules: 3, atRules: { type: [ '@font-face', '@charset', '@keyframes' ] }, minStyleRules: 1,
-    maxStyleRules: 20, styleRules: {}, experimental: false
+    minAtRules: 0, maxAtRules: 3,
+    atRules: { type: [ '@font-face', '@charset', '@keyframes' ] },
+    minStyleRules: 1, maxStyleRules: 20, styleRules: {},
+    experimental: false
   })
 
   Error: Expected a pseudo-class or pseudo-element.
       at /path/to/file.js:x:y
-      at /path/to/file.js:x:y)
+      at Root._error (/path/to/file.js:x:y)
 ```
