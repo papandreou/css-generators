@@ -1,3 +1,12 @@
+### v0.3.0 (2020-07-27)
+
+- [Update non-snapshot shrink tests](https://github.com/papandreou/css-generators/commit/e6df2f7945135e8f2b98e76711a49278cbf0164c) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update snapshots](https://github.com/papandreou/css-generators/commit/3b65b6051e714766d83e565b69b1cd3e8b125d6e) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Fix range support for data-type nodes](https://github.com/papandreou/css-generators/commit/ab3e2ab8d6d2ed097c5b08a7745524e1385a10c8) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update evaldown to ^1.2.1](https://github.com/papandreou/css-generators/commit/b6ba6dbea95b95d3f9d0a001614d90c78d0dc88a) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Add an example to the README](https://github.com/papandreou/css-generators/commit/b5708c211966e59ce238039bca24b3b0343e6443) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [+1 more](https://github.com/papandreou/css-generators/compare/v0.2.3...v0.3.0)
+
 ### v0.2.3 (2020-07-21)
 
 - [Update snapshots](https://github.com/papandreou/css-generators/commit/2cda3d99fdd5f966c3d7f5b62ea93f943cca5380) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
