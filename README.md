@@ -6,7 +6,117 @@
 
 CSS generator based on [chance-generators](https://github.com/sunesimonsen/chance-generators/), intended for use in property based tests with [unexpected-check](https://unexpected.js.org/unexpected-check/).
 
-## Example with unexpected-check
+```js
+const { stylesheet } = require('css-generators');
+
+const cssString = stylesheet().first();
+
+console.log(cssString);
+```
+
+Output 🤮 (pretty-printed):
+
+```css
+@keyframes 'naci' {
+  from {
+    background-color: teal;
+  }
+}
+code {
+  border-inline-start-style: groove;
+  align-items: stretch;
+  column-rule: dashed solid ridge hidden thin thick medium;
+  grid-template-areas: none;
+  transform-style: preserve-3d;
+}
+:nth-last-child(even) {
+  border-top-left-radius: 366.5271cm 84%;
+}
+#lef {
+  place-items: stretch;
+  margin-inline-end: 939.1693vmax;
+  rotate: -209.6995turn;
+  text-transform: lowercase;
+}
+::first-line {
+  mask-border-repeat: stretch;
+}
+#ejjitluh {
+  margin-inline: 604.394em;
+  block-size: fit-content(20%);
+  column-rule-color: rgb(71% 73% 79% 77% 61%);
+  text-transform: uppercase;
+}
+::first-letter ~ ::backdrop {
+  display: run-in;
+  outline-style: dotted double dashed;
+  vertical-align: bottom;
+}
+:scope {
+  border-top-style: dotted;
+  backdrop-filter: blur(-596.5616ch);
+  text-decoration-thickness: -371.2881px;
+}
+:link {
+  border-image: 60%;
+  overscroll-behavior-block: contain;
+  text-underline-offset: -408.7326q;
+  border-block-start-style: inset;
+  border-inline-start-width: thick;
+}
+:first-child {
+  text-decoration-thickness: from-font;
+}
+::first-letter {
+  border-top-color: hsla(-986.0958deg, 53%, 48%);
+  overscroll-behavior: contain;
+}
+:first-of-type {
+  border-inline-width: medium;
+  overscroll-behavior-y: none;
+  background-position: -5.503rem;
+  column-rule-width: thick thin;
+  white-space: pre-wrap;
+}
+* {
+  color: ButtonShadow;
+}
+:not(aji|*
+    .
+    femwaser
+    ::dawmem
+    ( 351.3803mm ):hepazpig:je
+    ( invert )
+    ::fow
+    ( normal ):fe
+    ( bel, erosi, 'hi', sans-serif ))
+  > ::first-letter {
+  scroll-margin-block: 5.2742q;
+  mask-border-source: repeating-linear-gradient(
+    darkgreen 766.9881mm 96% 57%,
+    currentcolor,
+    currentcolor,
+    #efa7d6 9% 342.287vw
+  );
+  float: left;
+}
+:link {
+  counter-set: none;
+  overscroll-behavior-inline: contain;
+  padding-block: 29%;
+  scroll-margin-inline-start: 620.2268ex;
+  shape-outside: margin-box inset(80%);
+}
+::cue-region(.dinbel) {
+  margin-inline: 181.6665vmax -925.3037ch;
+}
+::after {
+  margin-block-start: 655.738vh;
+  clip: rect(-85.4697cm, -896.6366em, -177.2922px, 274.8598em);
+}
+```
+
+## Example usage with unexpected-check
 
 Check that
 [cssnano](https://github.com/kangax/cssnano) always produces shorter output:
@@ -41,16 +151,16 @@ At the moment this immediately crashes cssnano by coming up with input that it d
 <!-- evaldown cleanStackTrace:true -->
 
 ```output
-Found an error after 1 iteration, 21 additional errors found.
+Found an error after 10 iterations, 7 additional errors found.
 counterexample:
 
-  Generated input: '::slotted([ jimab | lel ] ::gemsibsof:ow) { contain: strict; }\n:target { block-size: fit-content(302.1541cm); text-orientation: sideways; scroll-padding-top: -338.204cm; background-position: center bottom; }\n::selection { list-style: symbols() none; overscroll-behavior: none; }\n:read-write { overscroll-behavior-y: auto; }\n[data=cuvbe] { border-block-end-style: solid; mask-border-width: auto; }\n:link { resize: both; border-start-end-radius: 62%; grid-template-rows: none; scroll-padding-inline-end: auto; border-left-style: double; }\n:in-range { border-image: cross-fade(40% image(rgb(-8550520868306944)) , cross-fade(41% url(fig))) fill 2885859288285184 / 8194124427558912 round; }\n'
+  Generated input: ':read-only { text-decoration-line: none; word-wrap: normal; }\n::backdrop { hanging-punctuation: last force-end first; border-inline-start: dotted; margin-bottom: -670.3704cm; }\n::slotted(: wupgoj ( left ) ::gozerza ( repeat fill 39% / -666.2298mm ):pipcan) { mask-border: round none -7619040671432704 3520295415578624 / 52%; }\n:first-of-type { border-top-style: dashed; background-origin: content-box; quotes: \'tatoaf\' \'uvlonsef\'; }\n'
   with: stylesheet({
-    minAtRules: 0, maxAtRules: 3, atRules: { type: [ '@font-face', '@charset', '@keyframes' ] }, minStyleRules: 1, maxStyleRules: 20,
-    styleRules: {}, experimental: false
+    minAtRules: 0, maxAtRules: 3, atRules: { type: [ '@font-face', '@charset', '@keyframes' ] }, minStyleRules: 1,
+    maxStyleRules: 20, styleRules: {}, experimental: false
   })
 
-  TypeError: Cannot read property 'trim' of undefined
+  Error: Expected a pseudo-class or pseudo-element.
       at /path/to/file.js:x:y
       at /path/to/file.js:x:y)
 ```
