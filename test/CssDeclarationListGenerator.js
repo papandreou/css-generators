@@ -25,7 +25,7 @@ describe('CssDeclarationListGenerator', () => {
     it('should shrink', function () {
       const generator = new CssDeclarationListGenerator();
       expect(generator).toShrinkTowards(
-        'scroll-margin-block-start: 901.4287em;'
+        'scale: -6196617325576192 -975790292336640;'
       );
     });
 
@@ -34,7 +34,7 @@ describe('CssDeclarationListGenerator', () => {
         min: 2,
       });
       expect(generator).toShrinkTowards(
-        'scroll-margin-block-start: 901.4287em; mask-repeat: repeat-x;'
+        'scale: -6196617325576192 -975790292336640; border-inline: thin;'
       );
     });
   });

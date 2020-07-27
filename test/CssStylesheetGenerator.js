@@ -71,7 +71,7 @@ describe('CssStylesheetGenerator', () => {
     it('should shrink', function () {
       const generator = new CssStylesheetGenerator();
       expect(generator).toShrinkTowards(
-        '::slotted([ jimab | lel ] ::gemsibsof:ow) { list-style-image: url(gazziw); }\n'
+        ':link { scroll-margin-inline-start: 620.2268ex; }\n'
       );
     });
 
@@ -81,8 +81,8 @@ describe('CssStylesheetGenerator', () => {
         minAtRules: 0,
       });
       expect(generator).toShrinkTowards(
-        ':target { scroll-padding-top: -338.204cm; }\n' +
-          ':optional { letter-spacing: normal; }\n'
+        'code { grid-template-areas: none; }\n' +
+          '#lef { text-transform: lowercase; }\n'
       );
     });
 
@@ -92,15 +92,13 @@ describe('CssStylesheetGenerator', () => {
         minStyleRules: 0,
       });
       expect(generator).toShrinkTowards(
-        '@keyframes sidfanu {\n' +
-          '  to {\n' +
-          '  border-image-outset: 2718165087813632; animation-direction: normal; vertical-align: bottom; scroll-padding-bottom: -998.4425em;\n' +
-          '}\n' +
-          '}\n' +
-          '@keyframes tima {\n' +
+        "@keyframes 'naci' {\n" +
           '  from {\n' +
-          '  max-inline-size: 14%; background: padding-box right / contain repeat-x rgb(7965998619557888 , 81%) fixed left border-box; overflow-wrap: normal;\n' +
+          '  background-color: teal;\n' +
           '}\n' +
+          '}\n' +
+          '@font-face {\n' +
+          "  src:url(hiapli) format('enfic') ; font-feature-settings:'de' 37% ; unicode-range:U+2??? ; font-variant:none ; font-stretch:78% ; font-family:kanpakuj ; font-style:italic ; font-variation-settings:normal ; font-weight:773 ;\n" +
           '}\n'
       );
     });

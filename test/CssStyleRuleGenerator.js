@@ -25,7 +25,7 @@ describe('CssStyleRuleGenerator', () => {
     it('should shrink', function () {
       const generator = new CssStyleRuleGenerator();
       expect(generator).toShrinkTowards(
-        ':focus { border-block-start: inset; }'
+        ':focus { border-inline: thin black; }'
       );
     });
 
@@ -36,7 +36,7 @@ describe('CssStyleRuleGenerator', () => {
         },
       });
       expect(generator).toShrinkTowards(
-        ':focus { mask-repeat: repeat-x; empty-cells: hide; }'
+        ':focus { border-inline: thin black; list-style-position: inside; }'
       );
     });
   });
