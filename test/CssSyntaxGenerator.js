@@ -19,7 +19,7 @@ describe('CssSyntaxGenerator', () => {
       new CssSyntaxGenerator(
         'xx-small | x-small | small | medium | large | x-large | xx-large' // absolute-size
       ).take(3)
-    ).toEqualSnapshot(['small', 'x-large', 'xx-large']);
+    ).toEqualSnapshot(['small', 'xx-large', 'x-large']);
   });
 
   it('supports a range on a keyword', () => {
@@ -38,22 +38,22 @@ describe('CssSyntaxGenerator', () => {
         3
       )
     ).toEqualSnapshot([
-      'scale3d(-2260084377780224 , 5342043492581376 , 8119347222413312)',
-      'scale3d(-5702731889115136 , 4179231256870912 , 5038465087438848)',
-      'scale3d(1777273287999488 , 1744697403899904 , -6196617325576192)',
+      'scale3d(5342043492581376 , -5702731889115136 , 5038465087438848)',
+      'scale3d(1744697403899904 , -975790292336640 , -7206211195764736)',
+      'scale3d(-734106774142976 , -2995639344431104 , -6433539528589312)',
     ]);
   });
 
   it('supports a double bar combinator', () => {
     expect(
       new CssSyntaxGenerator('[ left | right ] || [ top | bottom ]').take(3) // side-or-corner
-    ).toEqualSnapshot(['bottom', 'bottom', 'top left']);
+    ).toEqualSnapshot(['bottom', 'bottom left', 'left']);
   });
 
   it('supports an optional multiplier', () => {
     expect(
       new CssSyntaxGenerator(`<wq-name> | <ns-prefix>? '*'`).take(3) // type-selector
-    ).toEqualSnapshot(['sidfanu | fopcu', 'uf | *', '*']);
+    ).toEqualSnapshot(['* | daej', '*', '*']);
   });
 
   it('supports <declaration>', () => {
@@ -62,9 +62,9 @@ describe('CssSyntaxGenerator', () => {
         '<declaration>? [ ; <page-body> ]? | <page-margin-box> <page-body>'
       ).take(3) // page-body
     ).toEqualSnapshot([
-      'transition: step-end ;',
+      'border-inline-start-style: double',
       '',
-      '@bottom-left-corner { border-image-outset: 2718165087813632; animation-direction: normal; vertical-align: bottom; scroll-padding-bottom: -998.4425em; } @top-center { column-width: auto; list-style-position: inside; grid-column: auto; list-style-position: outside; }',
+      '; animation-direction: alternate-reverse ; ; align-items: stretch',
     ]);
   });
 
@@ -72,9 +72,9 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator('<color> && <color-stop-angle>?').take(3) // angular-color-stop
     ).toEqualSnapshot([
-      'ButtonHighlight 60%',
-      ' rgba(5%)',
-      '416.1452rad rgb(97% / 94%)',
+      'rgba(1744697403899904 -6196617325576192 -975790292336640 -6197051738030080) ',
+      '#b5443e 84%',
+      ' Menu',
     ]);
   });
 
@@ -82,16 +82,20 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator('inset? && <length>{2,4} && <color>?').take(3) // shadow
     ).toEqualSnapshot([
-      '-633.1305rem #98cb2c ',
-      '-883.8328pc inset ',
-      '301.777ch  saddlebrown',
+      '463.9879vh 197.317px  ',
+      ' #b5443e -958.8311ch 939.8197rem 664.8853vw',
+      'inset #01cf18 -953.8752in 49.5493Q -200.2781em',
     ]);
   });
 
   it('supports a reference to a declaration value syntax', () => {
     expect(
       new CssSyntaxGenerator("<'border-radius'>").take(3) // shadow
-    ).toEqualSnapshot(['593.086vw', '78% / 15%', '-688.011cm']);
+    ).toEqualSnapshot([
+      '73% 60% -688.011cm 732.3523mm / 5% 84% 0%',
+      '-391.5155Q 43% 49.5493Q -906.6687in / 570.3519Q',
+      '59% 719.8808Q / 897.7711vw 81%',
+    ]);
   });
 
   // https://drafts.csswg.org/css-values-3/#component-types
@@ -99,16 +103,16 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator('foo( <number>?, <number>?, <number>? )').take(10)
     ).toEqualSnapshot([
-      'foo(8119347222413312)',
-      'foo(5038465087438848 , 1744697403899904)',
+      'foo(-5702731889115136 , 1777273287999488)',
+      'foo(-975790292336640)',
+      'foo(1821526110240768)',
+      'foo(-8636381890871296)',
+      'foo(5988754133090304 , -8993170276745216)',
+      'foo(2116358691094528 , -8879903957057536)',
       'foo()',
-      'foo(-2995639344431104)',
-      'foo(-6433539528589312 , 2718165087813632)',
-      'foo(3999174336970752 , 7900263360757760)',
-      'foo()',
-      'foo(-5703277324795904 , -3526458282606592 , 445972312227840)',
-      'foo()',
-      'foo(2014962675351552)',
+      'foo(-1803944254767104)',
+      'foo(-4813963569135616)',
+      'foo(-5410196146880512)',
     ]);
   });
 });

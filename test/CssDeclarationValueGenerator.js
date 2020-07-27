@@ -13,16 +13,16 @@ describe('CssDeclarationValueGenerator', () => {
           propertyName: 'background-position-y',
         }).take(10)
       ).toEqualSnapshot([
-        'top 60%, bottom 416.1452Q',
+        'top 45%, center',
         'center',
-        'y-end, center, center, 223.3063pt, center',
-        'center, center, bottom',
-        'center',
-        'center, center, center, center, top',
-        'bottom, y-start, center',
-        'center',
-        'y-start -390.7725ch, center, center, top 666.3899ch, center',
-        'center, center, center, bottom, 18%',
+        '939.8197rem, top',
+        'center, center, y-start, center, y-start',
+        'bottom 45%, center, y-end -804.6558ex',
+        'center, 17%, 40.136ex, top 94%',
+        'y-start -608.0343pt, center',
+        '59%, center',
+        'bottom, 20%',
+        'center, 77%',
       ]);
     });
   });
@@ -30,16 +30,16 @@ describe('CssDeclarationValueGenerator', () => {
   describe('without a property name', () => {
     it('should generate any CSS declaration value', () => {
       expect(new CssDeclarationValueGenerator().take(10)).toEqualSnapshot([
-        '96%',
-        'pink',
-        'left',
+        '73% 60%',
         'scroll',
-        '-81.5022vmax -332.5828Q auto 301.777ch',
-        '939.8197rem 664.8853vw auto auto',
-        'ButtonHighlight',
-        'url(bibro)',
+        '-332.5828Q 301.777ch 664.8853vw auto',
+        'normal',
+        '43% 49.5493Q',
         'start',
-        'hsl(-4813963569135616 , 46% , 9% , 20%)',
+        '-87.86cm 20%',
+        '59%',
+        'none',
+        'strict',
       ]);
     });
   });

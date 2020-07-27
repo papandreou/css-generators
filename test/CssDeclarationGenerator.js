@@ -9,15 +9,15 @@ describe('CssDeclarationGenerator', () => {
   it('should generate a CSS property + value pair', () => {
     expect(new CssDeclarationGenerator().take(10)).toEqualSnapshot([
       'font-optical-sizing: none',
-      'transition: step-end',
-      'mask-repeat: repeat-x',
-      'grid-row-start: auto',
-      'border-block-start: inset',
-      'empty-cells: hide',
-      'border-image-outset: 2718165087813632',
-      'animation-direction: normal',
-      'vertical-align: bottom',
-      'scroll-padding-bottom: -998.4425em',
+      'border-inline-start-style: double',
+      'border-inline: thin black',
+      'padding-inline-end: 0%',
+      'border-inline-start-color: #9c954d',
+      'list-style-position: inside',
+      'animation-duration: 49.5493s',
+      'font-variant-caps: normal',
+      'column-rule: hidden double double medium thin 884.4036vw hsla(-4665270404644864 69% 61%)',
+      'scroll-padding-bottom: auto',
     ]);
   });
 });

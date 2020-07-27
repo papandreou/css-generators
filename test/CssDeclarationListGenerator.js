@@ -8,16 +8,16 @@ describe('CssDeclarationListGenerator', () => {
 
   it('should generate a CSS declaration list', () => {
     expect(new CssDeclarationListGenerator().take(10)).toEqualSnapshot([
-      'scroll-margin-block-start: 901.4287em; padding-right: 60%;',
-      'border-inline: thin currentcolor; empty-cells: hide; border-image-outset: 2718165087813632;',
-      'background-color: ThreeDDarkShadow;',
-      'touch-action: auto; -webkit-line-clamp: none; word-wrap: normal; min-block-size: 223.3063pt; align-items: stretch;',
-      'column-rule: none thin;',
-      'font-feature-settings: normal; grid-template-rows: none; scrollbar-width: thin; border-radius: 28.4689vw / -907.0992vmax; max-block-size: max-content;',
-      'grid-template-areas: none;',
-      'transform-style: preserve-3d;',
-      'mask-border: 3318847205539840 url(ebik) repeat luminance; outline-color: invert; contain: strict; list-style-image: url(gazziw); font-variant-alternates: swash(uhlog) annotation(sezsi) ornaments(ju) historical-forms stylistic(bu) character-variant(mahbu) styleset(wot);',
-      'max-block-size: auto; text-transform: uppercase; opacity: 7475248958013440; shape-margin: 62%;',
+      'scroll-margin-block-start: -633.1305rem; scale: -6196617325576192 -975790292336640;',
+      'border-block-start: groove;',
+      'opacity: 3999174336970752; scroll-padding-bottom: 984.4232em; min-block-size: min-content; align-items: stretch;',
+      'list-style-position: outside; border-image: none;',
+      'border-block-end: double medium rgb(8388081040228352 1140099123249152 5555592747810816 -2064152721883136 -3519765393965056); border-block-end-width: 366.5271cm; max-height: 3%;',
+      'text-indent: hanging -584.1167px each-line;',
+      'unicode-bidi: plaintext;',
+      'transform: none; text-transform: lowercase; text-rendering: optimizeSpeed;',
+      'border-left-style: none; cursor: url(jitluh) -448.0017em 604.394em none; word-break: break-all;',
+      'border-left-width: 630.9229em; padding: 79%;',
     ]);
   });
 

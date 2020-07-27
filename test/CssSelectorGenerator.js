@@ -9,15 +9,15 @@ describe('CssSelectorGenerator', () => {
   it('supports a simple combinator', () => {
     expect(new CssSelectorGenerator().take(10)).toEqualSnapshot([
       ':focus',
-      ':valid',
       '::marker',
-      ':active',
       ':right',
-      ':target',
-      ':nth-of-type(even)',
-      ':lang(cu) * + :last-child',
-      '::before',
+      ':nth-of-type(2n+1)',
+      '*',
+      ':last-child',
       ':first-of-type',
+      ':required > .wuw',
+      ':checked',
+      ':active',
     ]);
   });
 });

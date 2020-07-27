@@ -9,14 +9,14 @@ describe('CssNamedSyntaxGenerator', () => {
   it('supports a simple combinator', () => {
     expect(
       new CssNamedSyntaxGenerator('absolute-size').take(3)
-    ).toEqualSnapshot(['small', 'xx-large', 'xxx-large']);
+    ).toEqualSnapshot(['small', 'xxx-large', 'x-large']);
   });
 
   it('supports a function call with parameters', () => {
     expect(new CssNamedSyntaxGenerator('scale3d()').take(3)).toEqualSnapshot([
-      'scale3d(-2260084377780224 , 5342043492581376 , 8119347222413312)',
-      'scale3d(-5702731889115136 , 4179231256870912 , 5038465087438848)',
-      'scale3d(1777273287999488 , 1744697403899904 , -6196617325576192)',
+      'scale3d(5342043492581376 , -5702731889115136 , 5038465087438848)',
+      'scale3d(1744697403899904 , -975790292336640 , -7206211195764736)',
+      'scale3d(-734106774142976 , -2995639344431104 , -6433539528589312)',
     ]);
   });
 
@@ -30,22 +30,22 @@ describe('CssNamedSyntaxGenerator', () => {
   it('supports a double bar combinator', () => {
     expect(
       new CssNamedSyntaxGenerator('side-or-corner').take(3)
-    ).toEqualSnapshot(['bottom', 'bottom', 'top left']);
+    ).toEqualSnapshot(['bottom', 'bottom left', 'left']);
   });
 
   it('supports an optional multiplier', () => {
     expect(
       new CssNamedSyntaxGenerator('type-selector').take(3)
-    ).toEqualSnapshot(['sidfanu | fopcu', 'uf | *', '*']);
+    ).toEqualSnapshot(['* | daej', '*', '*']);
   });
 
   it('supports <declaration>', () => {
     expect(
       new CssNamedSyntaxGenerator('supports-condition').take(3)
     ).toEqualSnapshot([
-      '(zin fixed) and (not (wocu ( 67% ) and uf ( url(bibro) )))',
-      '(not ((grid-template-rows: none) or (pu 4%))) and (naowruj -804.6558ex)',
-      '(ebik ( 325.0446vh ) and ((margin-inline-end: 18%) and ((muwwuh 140.888em) or (transition-property: none)))) or ruluhred ( thick )',
+      '(fidci thick dotted) and (not (not (visibility: hidden)))',
+      'sibsof ( 897.7711vw ) and (overflow-wrap: normal)',
+      'selector(#pe ::okonokan:log ( -286.4934vw -438.131Q 85.3922in ) #gebuwo ::duvtih ( auto ):inla ( bottom 421.3258pc left -937.1417vmin )) or selector(| * . ahoilhak ::kujemat:ril ( -511.749vw ) *:wejujo ( italic ) ::piz ( cross-fade(47% repeating-linear-gradient(670.605deg , rgb(68% 22% 1% , 35%) 40%, currentcolor 849.3873px 26%, currentcolor 992.5074cm 56% -442.2573mm , currentcolor 64%) , currentcolor) ):vub ( paint(gohigo) ))',
     ]);
   });
 
@@ -57,9 +57,9 @@ describe('CssNamedSyntaxGenerator', () => {
 
   it('supports name-repeat', () => {
     expect(new CssNamedSyntaxGenerator('name-repeat').take(3)).toEqualSnapshot([
-      'repeat(80% , [ wosalda ])',
-      'repeat(87% , [ fopcu ])',
-      'repeat(auto-fill , [ gafgohrak ])',
+      'repeat(96% , [ fidci ])',
+      'repeat(15% , [ wuw ])',
+      'repeat(100% , [ bibro ])',
     ]);
   });
 
@@ -82,17 +82,17 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('angular-color-stop').take(3)
     ).toEqualSnapshot([
-      'ButtonHighlight 60%',
-      ' rgba(5%)',
-      '416.1452rad rgb(97% / 94%)',
+      'rgba(1744697403899904 -6196617325576192 -975790292336640 -6197051738030080) ',
+      '#b5443e 84%',
+      ' Menu',
     ]);
   });
 
   it('supports a "between n and m" multiplier', () => {
     expect(new CssNamedSyntaxGenerator('shadow').take(3)).toEqualSnapshot([
-      '-633.1305rem #98cb2c ',
-      '-883.8328pc inset ',
-      '301.777ch  saddlebrown',
+      '463.9879vh 197.317px  ',
+      ' #b5443e -958.8311ch 939.8197rem 664.8853vw',
+      'inset #01cf18 -953.8752in 49.5493Q -200.2781em',
     ]);
   });
 
