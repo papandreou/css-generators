@@ -57,9 +57,9 @@ describe('CssNamedSyntaxGenerator', () => {
 
   it('supports name-repeat', () => {
     expect(new CssNamedSyntaxGenerator('name-repeat').take(3)).toEqualSnapshot([
-      'repeat(96% , [ fidci ])',
-      'repeat(15% , [ wuw ])',
-      'repeat(100% , [ bibro ])',
+      'repeat(96 , [ fidci ])',
+      'repeat(15 , [ wuw ])',
+      'repeat(100 , [ bibro ])',
     ]);
   });
 
