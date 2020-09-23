@@ -98,7 +98,7 @@ describe('CssStylesheetGenerator', () => {
           '}\n' +
           '}\n' +
           '@font-face {\n' +
-          "  src:url(hiapli) format('enfic') ; font-feature-settings:'de' 37% ; unicode-range:U+2??? ; font-variant:none ; font-stretch:78% ; font-family:kanpakuj ; font-style:italic ; font-variation-settings:normal ; font-weight:773 ;\n" +
+          "  src:url(hiapli) format('enfic') ; font-feature-settings:'de' 37 ; unicode-range:U+2??? ; font-variant:none ; font-stretch:78% ; font-family:kanpakuj ; font-style:italic ; font-variation-settings:normal ; font-weight:773 ;\n" +
           '}\n'
       );
     });
