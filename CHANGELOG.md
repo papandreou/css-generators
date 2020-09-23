@@ -1,3 +1,23 @@
+### v0.3.1 (2020-09-23)
+
+#### Pull requests
+
+- [#36](https://github.com/papandreou/css-generators/pull/36) Upgrade postcss to version 8.0.3 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#35](https://github.com/papandreou/css-generators/pull/35) Upgrade html-validate to version 3.3.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#34](https://github.com/papandreou/css-generators/pull/34) Upgrade html-validate to version 3.2.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#33](https://github.com/papandreou/css-generators/pull/33) Upgrade prettier to version 2.1.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#32](https://github.com/papandreou/css-generators/pull/32) Upgrade html-validate to version 3.1.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#31](https://github.com/papandreou/css-generators/pull/31) Upgrade eslint-plugin-mocha to version 8.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#30](https://github.com/papandreou/css-generators/pull/30) Fix stack trace and output line length. ([Alex J Burke](mailto:alex@alexjeffburke.com))
+
+#### Commits to master
+
+- [Fix shrinking test](https://github.com/papandreou/css-generators/commit/28240db233dbe322a8154cfc05e07b6a5923b22c) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [UNEXPECTED\_SNAPSHOT=1 npm test](https://github.com/papandreou/css-generators/commit/e3b7ae1e29f1b655fd8540503a64637286f2a332) ([Andreas Lind](mailto:andreas.lind@peakon.com))
+- [Update snapshots](https://github.com/papandreou/css-generators/commit/eb8000a0eb6273ab5a1cc2f94de7c40e6f62c150) ([Tom Picton](mailto:tom@tompicton.com))
+- [Fix integers being suffixed with %](https://github.com/papandreou/css-generators/commit/f2648159b772df383f50f4a1fb5b875899b7b51f) ([Tom Picton](mailto:tom@tompicton.com))
+- [Add simple example to the README](https://github.com/papandreou/css-generators/commit/f8db451d75e045330774bdcc859e19d9da2285d0) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+
 ### v0.3.0 (2020-07-27)
 
 - [Update non-snapshot shrink tests](https://github.com/papandreou/css-generators/commit/e6df2f7945135e8f2b98e76711a49278cbf0164c) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
@@ -13,11 +33,6 @@
 - [Switch to mdn-data-papandreou to get mdn\/data\#420](https://github.com/papandreou/css-generators/commit/194d54b54ccd50b5e70ed766ef0ef57483b660ed) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 
 ### v0.2.2 (2020-07-18)
-
-- [Add a quick test of the main export](https://github.com/papandreou/css-generators/commit/b0555e2746c4d2fca99ced6a27a19a1a766e50cb) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
-- [Unbreak the facades \(broken in 313b961\)](https://github.com/papandreou/css-generators/commit/db97fbbdcb1b79c438ab640e2efece1d7e108c69) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
-
-### v0.2.1 (2020-07-18)
 
 #### Pull requests
 
@@ -36,12 +51,12 @@
 
 #### Commits to master
 
+- [Add a quick test of the main export](https://github.com/papandreou/css-generators/commit/b0555e2746c4d2fca99ced6a27a19a1a766e50cb) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Unbreak the facades \(broken in 313b961\)](https://github.com/papandreou/css-generators/commit/db97fbbdcb1b79c438ab640e2efece1d7e108c69) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [Support a range on a keyword](https://github.com/papandreou/css-generators/commit/ce3d83660ee4ed594d8b9a5b0cf83330661248d2) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [Update snapshots](https://github.com/papandreou/css-generators/commit/6a999604ac185118e624b39aa3cb227d8894ecd1) ([Andreas Lind](mailto:andreas.lind@peakon.com))
 - [Add support for numeric ranges with &lt;number&gt;](https://github.com/papandreou/css-generators/commit/313b961c88382dfa9ed8ec3234f7bb70fd4533b7) ([Andreas Lind](mailto:andreas.lind@peakon.com))
-- [Update mdn-data to version 2.0.9](https://github.com/papandreou/css-generators/commit/5490122778013369c994f1a35fd43c0271939ab6) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
-- [Update snapshots](https://github.com/papandreou/css-generators/commit/631feb25748cb0cd000ee6d793a7a590d7ace2c9) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
-- [+14 more](https://github.com/papandreou/css-generators/compare/v0.2.0...v0.2.1)
+- [+16 more](https://github.com/papandreou/css-generators/compare/v0.2.0...v0.2.2)
 
 ### v0.2.0 (2020-02-23)
 
