@@ -5,6 +5,7 @@ const CssSyntaxGenerator = require('../lib/CssSyntaxGenerator');
 
 describe('CssSyntaxGenerator', () => {
   beforeEach(() => chanceCache.clear());
+  afterEach(() => CssSyntaxGenerator.setGenerators());
 
   it('supports an already parsed node', () => {
     expect(
@@ -114,5 +115,17 @@ describe('CssSyntaxGenerator', () => {
       'foo(-4813963569135616)',
       'foo(-5410196146880512)',
     ]);
+  });
+
+  it('should support custom generator methods', function () {
+    CssSyntaxGenerator.setGenerators({
+      generateKeyword() {
+        return 'Lorem ipsum';
+      },
+    });
+
+    expect(new CssSyntaxGenerator('string').first()).toEqualSnapshot(
+      'Lorem ipsum'
+    );
   });
 });

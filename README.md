@@ -166,3 +166,22 @@ counterexample:
       at /path/to/file.js:x:y
       at Root._error (/path/to/file.js:x:y)
 ```
+
+## Customisation
+
+You can customise generation by calling the `CssSyntaxGenerator.setGenerators`
+static method with any subset of `generate(Literal | Keyword | String | Brackets | DataType | Composed | Method)`:
+
+```js
+CssSyntaxGenerator.setGenerators({
+  generateKeyword() {
+    return 'Lorem ipsum';
+  },
+});
+```
+
+To restore default behaviour, just call it again with no parameters:
+
+```js
+CssSyntaxGenerator.setGenerators();
+```
