@@ -1,3 +1,7 @@
+### v0.4.0 (2020-09-24)
+
+- [#39](https://github.com/papandreou/css-generators/pull/39) Support custom node generators ([Tom Picton](mailto:tom@tompicton.com))
+
 ### v0.3.1 (2020-09-23)
 
 #### Pull requests
