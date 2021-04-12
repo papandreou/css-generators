@@ -21,7 +21,7 @@
   "devDependencies": {
     "coveralls": "^3.0.7",
     "css-generators": "file:./",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.0",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-config-standard": "^16.0.1",
