@@ -92,20 +92,20 @@ describe('CssAtRuleGenerator', () => {
   });
 
   it('should generate @import', () => {
-    expect(
-      new CssAtRuleGenerator({ type: 'import' }).take(10)
-    ).toEqualSnapshot([
-      '@import url(zin) ;',
-      "@import 'kodtac' terakji and not (not (((rujbave)))) ;",
-      "@import 'bawha' not (((uhlog > 85.3922ex) and (gebuwo:666934878142465/8343376577429505))) ;",
-      "@import 'tihceve' dueso and not (ip:fenrohu) ;",
-      "@import 'opu' ;",
-      '@import url(giimeduj) ;',
-      "@import 'bueh' ;",
-      '@import url(vake) ((ju:caku)) or (soze) ;',
-      '@import url(tumit) ;',
-      "@import 'waser' ;",
-    ]);
+    expect(new CssAtRuleGenerator({ type: 'import' }).take(10)).toEqualSnapshot(
+      [
+        '@import url(zin) ;',
+        "@import 'kodtac' terakji and not (not (((rujbave)))) ;",
+        "@import 'bawha' not (((uhlog > 85.3922ex) and (gebuwo:666934878142465/8343376577429505))) ;",
+        "@import 'tihceve' dueso and not (ip:fenrohu) ;",
+        "@import 'opu' ;",
+        '@import url(giimeduj) ;',
+        "@import 'bueh' ;",
+        '@import url(vake) ((ju:caku)) or (soze) ;',
+        '@import url(tumit) ;',
+        "@import 'waser' ;",
+      ]
+    );
   });
 
   it('should generate @keyframes', () => {

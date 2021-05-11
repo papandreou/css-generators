@@ -50,9 +50,9 @@ describe('CssNamedSyntaxGenerator', () => {
   });
 
   it('supports string-token', () => {
-    expect(
-      new CssNamedSyntaxGenerator('string-token').take(3)
-    ).toEqualSnapshot(["'ofosid'", "'daej'", "'wocu'"]);
+    expect(new CssNamedSyntaxGenerator('string-token').take(3)).toEqualSnapshot(
+      ["'ofosid'", "'daej'", "'wocu'"]
+    );
   });
 
   it('supports name-repeat', () => {
