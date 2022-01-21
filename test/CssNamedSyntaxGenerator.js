@@ -99,7 +99,7 @@ describe('CssNamedSyntaxGenerator', () => {
   it('supports <language-code>', () => {
     expect(
       new CssNamedSyntaxGenerator('language-code').take(3)
-    ).toEqualSnapshot(['ii', 'sn', 'vi']);
+    ).toEqualSnapshot(['ik', 'sn', 'vi']);
   });
 
   it('supports <string>', () => {
