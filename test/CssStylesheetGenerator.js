@@ -81,7 +81,7 @@ describe('CssStylesheetGenerator', () => {
         minAtRules: 0,
       });
       expect(generator).toShrinkTowards(
-        'cite { grid-template-areas: none; }\n' +
+        'code { grid-template-areas: none; }\n' +
           '#lef { text-transform: lowercase; }\n'
       );
     });
