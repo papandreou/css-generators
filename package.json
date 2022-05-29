@@ -38,7 +38,6 @@
     "offline-github-changelog": "^2.0.0",
     "prettier": "~2.5.0",
     "unassessed": "^0.2.0",
-    "unexpected": "^12.0.0",
     "unexpected-check": "^3.0.0",
     "unexpected-snapshot": "^1.1.0"
   },
