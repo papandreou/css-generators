@@ -9,7 +9,7 @@
     "coverage": "nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
     "test:ci": "npm run coverage && npm run test:documentation",
     "test:documentation": "evaldown --capture return --validate README.md",
-    "preversion": "offline-github-changelog --next=${npm_package_version} > CHANGELOG.md && git add CHANGELOG.md"
+    "preversion": "offline-github-changelog --next=${npm_new_version} > CHANGELOG.md && git add CHANGELOG.md"
   },
   "keywords": [
     "testing",
