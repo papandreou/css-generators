@@ -8,16 +8,16 @@ describe('CssSelectorGenerator', () => {
 
   it('supports a simple combinator', () => {
     expect(new CssSelectorGenerator().take(10)).toEqualSnapshot([
-      ':focus',
+      ':future',
       '::marker',
-      ':right',
-      ':nth-of-type(2n+1)',
-      '*',
-      ':last-child',
-      ':first-of-type',
-      ':required > .wuw',
-      ':checked',
-      ':active',
+      ':required',
+      ':nth-last-child(2n+1)',
+      ':indeterminate',
+      ':first-child',
+      ':read-only .wuw',
+      ':any-link',
+      '::',
+      '::',
     ]);
   });
 });

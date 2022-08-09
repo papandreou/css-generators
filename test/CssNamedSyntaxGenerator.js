@@ -44,8 +44,8 @@ describe('CssNamedSyntaxGenerator', () => {
       new CssNamedSyntaxGenerator('supports-condition').take(3)
     ).toEqualSnapshot([
       '(fidci thick dotted) and (not (not (visibility: hidden)))',
-      'sibsof ( 897.7711vw ) and (overflow-wrap: normal)',
-      'selector(#pe ::okonokan:log ( -286.4934vw -438.131Q 85.3922in ) #gebuwo ::duvtih ( auto ):inla ( bottom 421.3258pc left -937.1417vmin )) or selector(| * . ahoilhak ::kujemat:ril ( -511.749vw ) *:wejujo ( italic ) ::piz ( cross-fade(47% repeating-linear-gradient(670.605deg , rgb(68% 22% 1% , 35%) 40%, currentcolor 849.3873px 26%, currentcolor 992.5074cm 56% -442.2573mm , currentcolor 64%) , currentcolor) ):vub ( paint(gohigo) ))',
+      'sibsof ( auto ) and ve ( definite-first )',
+      "not (((scroll-padding-inline-end: 90%) and pakuj ( hsl(5443896876204032 , 7% , 99%) hidden )) and ((taevoka 67%) or selector([ bi = 'bu' i ] ::gewse:jocnuf *:ti ::ril ( -663.4179ic ):ugher ( auto ))))",
     ]);
   });
 
@@ -65,16 +65,16 @@ describe('CssNamedSyntaxGenerator', () => {
 
   it('supports dimension', () => {
     expect(new CssNamedSyntaxGenerator('dimension').take(10)).toEqualSnapshot([
-      '-250.9198turn',
-      '901.4287dppx',
+      '-250.9198s',
+      '901.4287dpi',
       '463.9879s',
-      '197.317pt',
-      '-687.9628kHz',
-      '-688.011deg',
-      '-883.8328kHz',
+      '197.317pc',
+      '-687.9628in',
+      '-688.011cm',
+      '-883.8328in',
       '732.3523grad',
-      '202.23dpi',
-      '416.1452Q',
+      '202.23dpcm',
+      '416.1452px',
     ]);
   });
 
@@ -91,8 +91,8 @@ describe('CssNamedSyntaxGenerator', () => {
   it('supports a "between n and m" multiplier', () => {
     expect(new CssNamedSyntaxGenerator('shadow').take(3)).toEqualSnapshot([
       '463.9879vh 197.317px  ',
-      ' #b5443e -958.8311ch 939.8197rem 664.8853vw',
-      'inset #01cf18 -953.8752in 49.5493Q -200.2781em',
+      ' #b5443e -958.8311cap 939.8197rem 664.8853vmin',
+      'inset #01cf18 -953.8752ex 49.5493px -200.2781cm',
     ]);
   });
 

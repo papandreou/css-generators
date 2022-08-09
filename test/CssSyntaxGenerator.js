@@ -64,7 +64,7 @@ describe('CssSyntaxGenerator', () => {
     ).toEqualSnapshot([
       'border-inline-start-style: double',
       '',
-      '; animation-direction: alternate-reverse ; ; align-items: stretch',
+      '; animation-delay: 939.8197s ; ; align-content: baseline ; ; ; mask-origin: margin-box',
     ]);
   });
 
@@ -83,8 +83,8 @@ describe('CssSyntaxGenerator', () => {
       new CssSyntaxGenerator('inset? && <length>{2,4} && <color>?').take(3) // shadow
     ).toEqualSnapshot([
       '463.9879vh 197.317px  ',
-      ' #b5443e -958.8311ch 939.8197rem 664.8853vw',
-      'inset #01cf18 -953.8752in 49.5493Q -200.2781em',
+      ' #b5443e -958.8311cap 939.8197rem 664.8853vmin',
+      'inset #01cf18 -953.8752ex 49.5493px -200.2781cm',
     ]);
   });
 
@@ -92,9 +92,9 @@ describe('CssSyntaxGenerator', () => {
     expect(
       new CssSyntaxGenerator("<'border-radius'>").take(3) // shadow
     ).toEqualSnapshot([
-      '73% 60% -688.011cm 732.3523mm / 5% 84% 0%',
-      '-391.5155Q 43% 49.5493Q -906.6687in / 570.3519Q',
-      '59% 719.8808Q / 897.7711vw 81%',
+      '73% 60% -688.011ch 732.3523ic / 5% 84% 0%',
+      '-391.5155px 43% 49.5493px -906.6687ex / 570.3519px',
+      '59% 719.8808px / 897.7711vw 81%',
     ]);
   });
 

@@ -10,14 +10,14 @@ describe('CssDeclarationGenerator', () => {
     expect(new CssDeclarationGenerator().take(10)).toEqualSnapshot([
       'font-optical-sizing: none',
       'border-inline-start-style: double',
-      'border-inline: thin black',
-      'padding-inline-end: 0%',
+      'border-inline: thin aqua',
+      'user-select: contain',
+      'transform: none',
       'border-inline-start-color: #9c954d',
       'list-style-position: inside',
-      'animation-duration: 49.5493s',
+      'animation-direction: alternate',
       'font-variant-caps: normal',
       'column-rule: hidden double double medium thin 884.4036vw hsla(-4665270404644864 69% 61%)',
-      'scroll-padding-bottom: auto',
     ]);
   });
 });

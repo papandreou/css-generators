@@ -8,16 +8,16 @@ describe('CssStyleRuleGenerator', () => {
 
   it('should generate a CSS style rule', () => {
     expect(new CssStyleRuleGenerator().take(10)).toEqualSnapshot([
-      ':focus { border-inline-start-style: double; border-inline: thin black; padding-inline-end: 0%; border-inline-start-color: #9c954d; list-style-position: inside; }',
-      '.ted { column-rule: hidden double double medium thin 884.4036vw hsla(-4665270404644864 69% 61%); }',
-      '::after { text-indent: hanging -584.1167px each-line; }',
-      '.ziwiwwuh { mask-border-repeat: stretch; }',
-      '#ejjitluh { margin-inline: 604.394em; block-size: fit-content(20%); column-rule-color: rgb(71% 73% 79% 77% 61%); text-transform: uppercase; }',
-      '::first-letter ~ ::backdrop { display: run-in; outline-style: dotted double dashed; vertical-align: bottom; }',
-      ':scope { border-top-style: dotted; backdrop-filter: blur(-596.5616ch); text-decoration-thickness: -371.2881px; }',
-      ':link { border-image:  60%; overscroll-behavior-block: contain; text-underline-offset: -408.7326Q; border-block-start-style: inset; border-inline-start-width: thick; }',
-      ':first-child { text-decoration-thickness: from-font; }',
-      '::first-letter { border-top-color: hsla(-986.0958deg , 53% , 48%); overscroll-behavior: contain; }',
+      ':future { border-inline-start-style: double; border-inline: thin aqua; user-select: contain; transform: none; border-inline-start-color: #9c954d; }',
+      ':last-of-type { animation-direction: alternate; font-variant-caps: normal; column-rule: hidden double double medium thin 884.4036vw hsla(-4665270404644864 69% 61%); }',
+      ':visited { text-indent: hanging -584.1167pt each-line; }',
+      '#ziwiwwuh { mask-border-repeat: stretch; }',
+      '* { cursor: url(jitluh) -448.0017cm 604.394cm none; word-break: break-all; font-variant: normal; align-content: normal; border-left-width: medium; }',
+      ':scope { background-size: cover; border-bottom-color: currentcolor; grid-template-areas: none; background-image: none; }',
+      ':first { mask-mode: alpha; mask: url(wic) subtract margin-box; content: none; overscroll-behavior: auto; }',
+      ':default { margin-block-start: 885.7072ch; mask-repeat: repeat; text-underline-offset: -408.7326px; }',
+      '::before ~ :target { gap: -755.8241vmin; }',
+      ':first { clip-path: url(luh); }',
     ]);
   });
 
