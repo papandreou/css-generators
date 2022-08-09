@@ -71,7 +71,7 @@ describe('CssStylesheetGenerator', () => {
     it('should shrink', function () {
       const generator = new CssStylesheetGenerator();
       expect(generator).toShrinkTowards(
-        ':link { scroll-margin-inline-start: 620.2268ex; }\n'
+        ':last-of-type { font-variant-caps: normal; }\n'
       );
     });
 
@@ -81,8 +81,8 @@ describe('CssStylesheetGenerator', () => {
         minAtRules: 0,
       });
       expect(generator).toShrinkTowards(
-        'col { grid-template-areas: none; }\n' +
-          '#lef { text-transform: lowercase; }\n'
+        '#ziwiwwuh { mask-border-repeat: stretch; }\n' +
+          ':first { clip-path: url(luh); }\n'
       );
     });
 
@@ -94,11 +94,13 @@ describe('CssStylesheetGenerator', () => {
       expect(generator).toShrinkTowards(
         "@keyframes 'naci' {\n" +
           '  from {\n' +
-          '  background-color: teal;\n' +
+          '  background-blend-mode: exclusion;\n' +
           '}\n' +
           '}\n' +
-          '@font-face {\n' +
-          "  src:url(hiapli) format('enfic') ; font-feature-settings:'de' 37 ; unicode-range:U+2??? ; font-variant:none ; font-stretch:78% ; font-family:kanpakuj ; font-style:italic ; font-variation-settings:normal ; font-weight:773 ;\n" +
+          '@keyframes jom {\n' +
+          '  from {\n' +
+          '  border-end-start-radius: -267.2763em; grid-template-rows: none;\n' +
+          '}\n' +
           '}\n'
       );
     });

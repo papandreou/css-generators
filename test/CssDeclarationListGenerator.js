@@ -24,9 +24,7 @@ describe('CssDeclarationListGenerator', () => {
   describe('when shrinking', function () {
     it('should shrink', function () {
       const generator = new CssDeclarationListGenerator();
-      expect(generator).toShrinkTowards(
-        'scale: -6196617325576192 -975790292336640;'
-      );
+      expect(generator).toShrinkTowards('mask-repeat: repeat-y;');
     });
 
     it('should honor the min setting of the original generator', function () {
@@ -34,7 +32,7 @@ describe('CssDeclarationListGenerator', () => {
         min: 2,
       });
       expect(generator).toShrinkTowards(
-        'scale: -6196617325576192 -975790292336640; border-inline: thin;'
+        'scroll-margin-block: -633.1305rem 559.382px; border-block-end-width: thick;'
       );
     });
   });

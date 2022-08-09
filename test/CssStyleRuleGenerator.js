@@ -25,7 +25,7 @@ describe('CssStyleRuleGenerator', () => {
     it('should shrink', function () {
       const generator = new CssStyleRuleGenerator();
       expect(generator).toShrinkTowards(
-        ':focus { border-inline: thin black; }'
+        ':future { border-inline-start-color: #9c954d; }'
       );
     });
 
@@ -36,7 +36,7 @@ describe('CssStyleRuleGenerator', () => {
         },
       });
       expect(generator).toShrinkTowards(
-        ':focus { border-inline: thin black; list-style-position: inside; }'
+        ':future { border-inline: thin aqua; border-inline-start-color: #9c954d; }'
       );
     });
   });
