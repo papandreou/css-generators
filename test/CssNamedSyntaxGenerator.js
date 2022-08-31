@@ -14,9 +14,9 @@ describe('CssNamedSyntaxGenerator', () => {
 
   it('supports a function call with parameters', () => {
     expect(new CssNamedSyntaxGenerator('scale3d()').take(3)).toEqualSnapshot([
-      'scale3d(5342043492581376 , -5702731889115136 , 5038465087438848)',
-      'scale3d(1744697403899904 , -975790292336640 , -7206211195764736)',
-      'scale3d(-734106774142976 , -2995639344431104 , -6433539528589312)',
+      'scale3d(18%, 60%)',
+      'scale3d(-6197051738030080, -734106774142976, 60%)',
+      'scale3d(2%)',
     ]);
   });
 
@@ -45,7 +45,7 @@ describe('CssNamedSyntaxGenerator', () => {
     ).toEqualSnapshot([
       '(fidci thick dotted) and (not (not (visibility: hidden)))',
       'sibsof ( auto ) and ve ( definite-first )',
-      "not (((scroll-padding-inline-end: 90%) and pakuj ( hsl(5443896876204032 , 7% , 99%) hidden )) and ((taevoka 67%) or selector([ bi = 'bu' i ] ::gewse:jocnuf *:ti ::ril ( -663.4179ic ):ugher ( auto ))))",
+      "not (((scroll-padding-inline-end: 90%) and pakuj ( hsla(5443896876204032 , 7% , 99%) hidden )) and ((taevoka 67%) or selector([ bi = 'bu' i ] ::gewse:jocnuf *:ti ::ril ( -663.4179ic ):ugher ( auto ))))",
     ]);
   });
 
@@ -82,17 +82,17 @@ describe('CssNamedSyntaxGenerator', () => {
     expect(
       new CssNamedSyntaxGenerator('angular-color-stop').take(3)
     ).toEqualSnapshot([
-      'rgba(1744697403899904 -6196617325576192 -975790292336640 -6197051738030080) ',
-      '#b5443e 84%',
+      'hsl(-108.3345deg , 5% , 87%) 5% 84%',
       ' Menu',
+      ' rgb(40% 14% 4% 29% , -7374978819293184)',
     ]);
   });
 
   it('supports a "between n and m" multiplier', () => {
     expect(new CssNamedSyntaxGenerator('shadow').take(3)).toEqualSnapshot([
       '463.9879vh 197.317px  ',
-      ' #b5443e -958.8311cap 939.8197rem 664.8853vmin',
-      'inset #01cf18 -953.8752ex 49.5493px -200.2781cm',
+      ' lch(none 97% none / 62%) 223.3063pc -985.8674mm',
+      'inset  -415.7107vw -267.2763em',
     ]);
   });
 
