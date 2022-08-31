@@ -71,7 +71,7 @@ describe('CssStylesheetGenerator', () => {
     it('should shrink', function () {
       const generator = new CssStylesheetGenerator();
       expect(generator).toShrinkTowards(
-        ':last-of-type { font-variant-caps: normal; }\n'
+        ':nth-of-type(6n+7) { place-items: normal; }\n'
       );
     });
 
@@ -81,8 +81,8 @@ describe('CssStylesheetGenerator', () => {
         minAtRules: 0,
       });
       expect(generator).toShrinkTowards(
-        '#ziwiwwuh { mask-border-repeat: stretch; }\n' +
-          ':first { clip-path: url(luh); }\n'
+        ':nth-last-child(1n+1 of #notibaw ::ginbu ( 90% ):gib ( medium ) + bu:gor ::duvtih ( -378.0354Q ):rij ( 56% )) { border-block-start-width: -937.1417vmin; }\n' +
+          ':nth-child(odd) { border-left-style: ridge; }\n'
       );
     });
 

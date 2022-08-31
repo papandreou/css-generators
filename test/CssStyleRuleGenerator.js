@@ -24,9 +24,7 @@ describe('CssStyleRuleGenerator', () => {
   describe('when shrinking', function () {
     it('should shrink', function () {
       const generator = new CssStyleRuleGenerator();
-      expect(generator).toShrinkTowards(
-        ':future { border-inline-start-color: #9c954d; }'
-      );
+      expect(generator).toShrinkTowards(':future { transform: none; }');
     });
 
     it('should honor the declarationList setting of the original generator', function () {
@@ -36,7 +34,7 @@ describe('CssStyleRuleGenerator', () => {
         },
       });
       expect(generator).toShrinkTowards(
-        ':future { border-inline: thin aqua; border-inline-start-color: #9c954d; }'
+        ':future { transform: none; border-inline-start-color: lch(-8879903957057536 -3760881468964864 none); }'
       );
     });
   });
