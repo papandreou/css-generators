@@ -94,5 +94,4 @@
 - [Stylesheet: Allow configuring the style rules](https://github.com/papandreou/css-generators/commit/1b888ff18199e87aa91e235b178ed5f004b1d854) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [stylesheet: Add the ability to configure the atrules](https://github.com/papandreou/css-generators/commit/a8fc73b216ab7861d13ef70cd8554010a22b1d79) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
 - [Fix forwarding of the experimental flag from the stylesheet generator](https://github.com/papandreou/css-generators/commit/1c340df4ad918bd8f943cc0a643cd9f91a9356c5) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
-- [+97 more](https://github.com/papandreou/css-generators/compare/eb62c7e51a1d9bae93a70ea1bda61f2b30348f4d%5E...v0.1.0)
-
+- [+97 more](https://github.com/papandreou/css-generators/compare/1c340df4ad918bd8f943cc0a643cd9f91a9356c5...v0.1.0)
