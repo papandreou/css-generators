@@ -56,5 +56,8 @@
     "include": [
       "lib/**"
     ]
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
