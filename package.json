@@ -50,11 +50,14 @@
     "lodash": "^4.17.15",
     "mdn-data": "2.0.29",
     "pegjs": "^0.10.0",
-    "postcss": "^8.0.3"
+    "postcss": "8.5.5"
   },
   "nyc": {
     "include": [
       "lib/**"
     ]
+  },
+  "engines": {
+    "node": ">=14"
   }
 }

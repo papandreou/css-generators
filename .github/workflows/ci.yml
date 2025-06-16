@@ -13,6 +13,8 @@ jobs:
           - '14'
           - '16'
           - '18'
+          - '20'
+          - '22'
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
@@ -38,7 +40,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: '22'
       - run: npm install
       - run: npm run ${{ matrix.targets.target }}
       - name: Upload coverage
